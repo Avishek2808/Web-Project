@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Spectral+SC" rel="stylesheet">
+    <style>
+
+  body h1
+  {
+      font-family: 'Spectral SC', serif;
+    }
+
+    body h5
+  {
+      font-family: 'Spectral SC', serif;
+    }
+
+
+.listView .item {
+    margin: 10px 0;
+    padding: 10px 0;
+    border-bottom: 2px solid #e5e5e5;
+    clear: both;
+}
+
+.listView .item-icon {
+    display: table-cell;
+    width: 126px;
+    padding: 0 0 10px;
+    vertical-align: top;
+}
+
+.listView .item-content {
+    display: table-cell;
+    padding: 0 0 10px 20px;
+    vertical-align: top;
+    width: 100%;
+}
+
+.listView .item-author
+ {
+    display: inline-block;
+    padding: 0 0 2px;
+}
+
+.listView .item-author, .listView .item-description
+ {
+    font-size: 13px;
+}
+
+a, a:visited 
+{
+    color: #005CA5;
+    text-decoration: none;
+}
+
+.listView big.item-title
+ {
+    display: block;
+    font-weight: bold;
+}
+
+.listView h3, .listView big.item-title
+ {
+    font-size: 16px;
+    line-height: 1.2em;
+}
+
+.listView .item-details {
+    margin: 6px 0 0;
+}
+
+ul, ol {
+    list-style-type: none;
+}
+
+html, body, article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, div, h1, h2, h3, h4, h5, h6, p, blockquote, dl, dt, dd, ol, ul, li, span, big, small, pre, a, acronym, big, em, img, strong, table, caption, tbody, tfoot, thead, tr, th, td, form, fieldset, label, legend, input, textarea, button {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    border: 0;
+    outline: 0;
+    background: transparent;
+}
+
+user agent stylesheet
+ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+
+.listView .item-details-views {
+    padding: 0 0 0 20px;
+}
+
+.listView .item-details-views, .listView .item-details-favorites, .listView .item-details-comments, .listView .item-details-saleOption {
+    position: relative;
+    cursor: default;
+}
+
+.listView .item-details-favorites {
+    padding: 0 0 0 15px;
+}
+
+.listView .item-details-views, .listView .item-details-favorites, .listView .item-details-comments, .listView .item-details-saleOption {
+    position: relative;
+    cursor: default;
+    }
+
+    .listView .item-description {
+    margin: 14px 0 0;
+    word-wrap: break-word;
+}
+
+.listView .item-author, .listView .item-description {
+    font-size: 13px;
+}
+
+
+
+
+
+
+.para
+{
+  text-align: justify;
+  font-size: 14px;
+  color: white;
+}
+
+
+.backc
+{
+  background-color: #353535;
+
+}
+
+.auth
+{
+  color: #F05F40;
+}
+</style>
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>TBH - Romance Gallery</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/creative.min.css" rel="stylesheet">
+    <link href="css/creative.css" rel="stylesheet">
+
+    <link href="css/book.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/jpg" href="img/icon/logo1.png">
+
+  </head>
+
+  <body class="background"><!--Class:to implement the background image via css-->
+ 
+
+    <section>
+    <!-- Navigation -->
+    <div class=" paint">
+    <nav class="navbar navbar-expand-lg navbar-light" id="mainNav" style="background-color: #505257">
+      <div class="container">
+        
+        <a class="navbar-brand js-scroll-trigger" href="index.html"><img src="img/logofinal3.png" width="75%"></a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="index.html#index">Home</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="gallery.html#Books">Books</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="registration.html#Registration Form">Register</a>
+            </li>
+             <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="contact.html#Contact">Contact us</a>
+            </li>
+
+            </li>
+             <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="us.html#us">About us</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="login.html#login">Login</a>
+            </li>
+
+
+          </ul>
+        
+        </div>
+      </div>
+    </nav>
+    </div>
+</section>
+
+  
+
+    
+
+
+
+
+<body>
+  <section class="slideup">
+
+  <h1 style="text-align: center; color: #00ccff"> Biographies</h1>
+
+
+  <p><center><img src="img/bookwp/biography.jpg" alt="Biography Banner" width="1035" height="245"></center></p>
+</section>
+
+  
+<section id="booksList" class="listView books slideup2">
+ <div class="item backc">
+  
+                    <div class="item-icon">
+                        <a href="books/Mahatma-Gandhi.pdf"><img src="img/bookwp/gandhi.jpg" width="170" alt="Mahatma Gandhi"/></a>
+                    </div>
+                    <div class="item-content">
+                        <a style="color: #00ccff" class="item-author auth" href="books/Mahatma-Gandhi.pdf"/>Stanley Jones</a>
+                        
+                        <big class="item-title"><a style="color: #00ccff" class="word-break" href="books/Mahatma-Gandhi.pdf"/>Mahatma Gandhi</a></big>
+                                                    
+                        <p style="color:#bdbdbd"> Biography | English </p>
+                        
+                        <div>
+                     <p class="para">Born and raised in a Hindu merchant caste family in coastal Gujarat, western India, and trained in law at the Inner Temple, London, Gandhi first employed nonviolent civil disobedience as an expatriate lawyer in South Africa, in the resident Indian community's struggle for civil rights. After his return to India in 1915, he set about organising peasants, farmers, and urban labourers to protest against excessive land-tax and discrimination. Assuming leadership of the Indian National Congress in 1921, Gandhi led nationwide campaigns for various social causes and for achieving Swaraj or self-rule.
+                      <br/> </p>
+
+                      <a href="books/Mahatma-Gandhi.pdf" style="color: #00ccff" class="para"> To Read more</a>
+                                              
+                      </div>
+                                                    
+                    </div>
+                </div>
+
+   
+         </div>
+      </div>
+
+
+<div class="item backc">
+                    <div class="item-icon">
+                        <a href="books/Mother Theresa.pdf"><img src="img/bookwp/mothertheresa.jpg" width="170" alt="Saint Theresa Of Spain" /></a>
+                    </div>
+                    <div class="item-content">
+                        <a style="color: #00ccff" class="item-author" data-bxuid="Kerry Walters" href="books/Mother Theresa.pdf">Kerry Walters</a>
+                        <big class="item-title"><a style="color: #00ccff" class="word-break" href="books/Mother Theresa.pdf">Saint Theresa Of Spain</a></big>
+                                                    
+                        <p style="color:#bdbdbd"> Biography | English </p>
+                        
+                        <div>
+                     <p class="para">  In 1950 Teresa founded the Missionaries of Charity, a Roman Catholic religious congregation which had over 4,500 sisters and was active in 133 countries in 2012. The congregation manages homes for people dying of HIV/AIDS, leprosy and tuberculosis; soup kitchens; dispensaries and mobile clinics; children's- and family-counselling programmes; orphanages, and schools. Members, who take vows of chastity, poverty, and obedience, also profess a fourth vow: to give "wholehearted free service to the poorest of the poor".</p>
+                      <br/> </p>
+
+                      <a href="books/Mother Theresa.pdf" style="color: #00ccff" class="para"> To Read more</a>
+                                              
+                      </div>
+                                                    
+                    </div>
+                </div>
+
+
+
+ <div class="item backc">
+                    <div class="item-icon">
+                        <a href="books/nelson mandela.pdf"><img src="img/bookwp/mandela.jpg" width="170" alt="Long Walk To Freedom" /></a>
+                    </div>
+                    <div class="item-content">
+                        <a style="color: #00ccff" class="item-author" data-bxuid="Nelson Mandela" href="books/nelson mandela.pdf">Nelson Mandela</a>
+                        <big class="item-title"><a style="color: #00ccff" class="word-break" href="books/nelson mandela.pdf">Long Walk To Freedom</a></big>
+                                                    
+                        <p style="color:#bdbdbd"> Biography | English </p>
+                        
+                        <div>
+                     <p class="para">A Xhosa, Mandela was born in Mvezo to the Thembu royal family. He studied law at the University of Fort Hare and the University of the Witwatersrand before working as a lawyer in Johannesburg. There he became involved in anti-colonial and African nationalist politics, joining the ANC in 1943 and co-founding its Youth League in 1944. After the National Party's white-only government established apartheid, a system of racial segregation that privileged whites, he and the ANC committed themselves to its overthrow. Mandela was appointed President of the ANC's Transvaal branch, rising to prominence for his involvement in the 1952 Defiance Campaign and the 1955 Congress of the People. He was repeatedly arrested for seditious activities and was unsuccessfully prosecuted in the 1956 Treason Trial. Influenced by Marxism, he secretly joined the banned South African Communist Party (SACP). Although initially committed to non-violent protest, in association with the SACP he co-founded the militant Umkhonto we Sizwe in 1961 and led a sabotage campaign against the government. In 1962, he was arrested for conspiring to overthrow the state and sentenced to life imprisonment in the Rivonia Trial.</p>   
+                      <br/> </p>
+
+                      <a href="books/nelson mandela.pdf" style="color: #00ccff" class="para"> To Read more</a>
+                                               
+                      </div>
+                                                    
+                    </div>
+                </div>
+
+
+<div class="item backc">
+                    <div class="item-icon">
+                        <a href="books/Albert Einstein.pdf"><img src="img/bookwp/albert.jpg" width="170" alt="Albert Einstein" /></a>
+                    </div>
+                    <div class="item-content">
+                        <a style="color: #00ccff" class="item-author" data-bxuid="John Archibald Wheeler" href="books/Albert Einstein.pdf">John Archibald Wheeler</a>
+                        <big class="item-title"><a style="color: #00ccff" class="word-break" href="books/Albert Einstein.pdf">Albert Einstein</a></big>
+                                                    
+                        <p style="color:#bdbdbd"> Biography | English </p>
+                        
+                        <div>
+                     <p class="para">Albert Einstein (14 March 1879 – 18 April 1955) was a German-born theoretical physicist. Einstein developed the theory of relativity, one of the two pillars of modern physics (alongside quantum mechanics).Einstein's work is also known for its influence on the philosophy of science. Einstein is best known by the general public for his mass–energy equivalence formula E = mc2 (which has been dubbed "the world's most famous equation").He received the 1921 Nobel Prize in Physics "for his services to theoretical physics, and especially for his discovery of the law of the photoelectric effect",a pivotal step in the evolution of quantum theory.
+                     <p class="para">Near the beginning of his career, Einstein thought that Newtonian mechanics was no longer enough to reconcile the laws of classical mechanics with the laws of the electromagnetic field. This led him to develop his special theory of relativity during his time at the Swiss Patent Office in Bern (1902–1909), Switzerland. However, he realized that the principle of relativity could also be extended to gravitational fields and—with his subsequent theory of gravitation in 1916—he published a paper on general relativity. He continued to deal with problems of statistical mechanics and quantum theory, which led to his explanations of particle theory and the motion of molecules. He also investigated the thermal properties of light which laid the foundation of the photon theory of light. In 1917, Einstein applied the general theory of relativity to model the large-scale structure of the universe.  
+                      </p>
+                      <br/> </p>
+
+                      <a href="books/Albert Einstein.pdf" style="color: #00ccff" class="para"> To Read more</a>
+                         
+                                            
+                      </div>
+                                                    
+                    </div>
+                </div>
+
+<div class="item backc">
+                    <div class="item-icon">
+                        <a href="books/Hillary Clinton.pdf"><img src="img/bookwp/hillary2.jpg" width="170" alt="Hillary Rodham Clinton" /></a>
+                    </div>
+                    <div class="item-content">
+                        <a style="color: #00ccff" class="item-author" data-bxuid="Hillary Clinton" href="books/Hillary Clinton.pdf">Hillary Clinton</a>
+                        <big class="item-title"><a style="color: #00ccff" class="word-break" href="books/Hillary Clinton.pdf">Hillary Rodham Clinton</a></big>
+                                                    
+                        <p style="color:#bdbdbd"> Biography | English </p>
+                        
+                        <div>
+                     <p class="para">Hillary Diane Rodham Clinton; born October 26, 1947) is an American politician who was the First Lady of the United States from 1993 to 2001, U.S. Senator from New York from 2001 to 2009, 67th United States Secretary of State from 2009 to 2013, and the Democratic Party's nominee for President of the United States in the 2016 election.
+
+                      Born in Chicago, Illinois and raised in the Chicago suburb of Park Ridge, Clinton graduated from Wellesley College in 1969 and earned a J.D. from Yale Law School in 1973. After serving as a congressional legal counsel, she moved to Arkansas and married Bill Clinton in 1975. In 1977, she co-founded Arkansas Advocates for Children and Families. She was appointed the first female chair of the Legal Services Corporation in 1978 and became the first female partner at Rose Law Firm the following year. As First Lady of Arkansas, she led a task force whose recommendations helped reform Arkansas's public schools. 
+                      </p>
+                      <br/> </p>
+
+                      <a href="books/Hillary Clinton.pdf" style="color: #00ccff" class="para"> To Read more</a>
+                         
+                                              
+                      </div>
+                                                    
+                    </div>
+                </div>
+
+  <div class="item backc">
+                    <div class="item-icon">
+                        <a href="books/I am Malala.pdf"><img src="img/bookwp/malala3.jpg" width="170" alt="I Am Malala" /></a>
+                    </div>
+                    <div class="item-content">
+                        <a style="color: #00ccff" class="item-author" data-bxuid="Christina Lamb" href="books/I am Malala.pdf">Christina Lamb</a>
+                        <big class="item-title"><a style="color: #00ccff" class="word-break" href="books/I am Malala.pdf">I Am Malala</a></big>
+                                                    
+                        <p style="color:#bdbdbd"> Biography | English </p>
+                        
+                        <div>
+                     <p class="para">In 2009 Malala Yousafzai began writing a blog on BBC Urdu about life in the Swat Valley as the Taliban gained control, at times banning girls from attending school. When her identity was discovered, Malala began to appear in both Pakistani and international media, advocating the freedom to pursue education for all. In October 2011, gunmen boarded Malala's school bus and shot her in the face, a bullet passing through her head and into her shoulder. Remarkably, Malala survived the shooting.
+                     <p class="para">At a very young age, Malala Yousafzai has become a worldwide symbol of courage and hope. Her shooting has sparked a wave of solidarity across Pakistan, not to mention globally, for the right to education, freedom from terror and female emancipation.
+                      <br/> </p>
+
+                      <a href="books/I am Malala.pdf" style="color: #00ccff" class="para"> To Read more</a>
+                                             
+                      </div>
+                                                    
+                    </div>
+                </div>
+
+
+
+</section>
+</div>
+
+
+</section>
+</div>
+  <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/creative.min.js"></script>
+
+
+ <section>
+
+ <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                          <h5 style="padding-top: 15px; padding-bottom: 10px; color: #00ccff">THE BOOK CAFE</h5>
+                            <p style="color:#fdebe7; text-align: justify;">
+                               This is a special website dedicated to all those who have an incredible passion for reading. You will find an array of books categorised for every age group and for every genres. Its the perfect spot where you will be able to relish and cherish every minute of your daily reading quota. Also, there is specific corner designed where you will find motivational and inspiring quotes which will boost your state of mind and help you to enjoy your day.
+                            </p>
+                        </div>
+                  
+
+                    <div class="col-md-4">                        
+                            <h5 style="padding-top: 15px; padding-bottom: 10px; color: #00ccff; text-align: center;">Useful links</h5>
+
+                            <div class="list-group">
+                              <a style="background-color: transparent; border-bottom: 0.5px solid white; border-top: none; border-left:none; border-right: none" class="list-group-item" href="#"><i style="color:#00ccff" class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp; <span style="color:white">Home</span></a>
+                              <a style="background-color: transparent; border-bottom: 0.5px solid white; border-top: none; border-left:none; border-right: none" class="list-group-item" href="#"><i style="color:#00ccff" class="fa fa-pencil fa-fw" aria-hidden="true"></i>&nbsp; <span style="color:white">Writer's Corner</span></a>
+                              <a style="background-color: transparent; border-bottom: 0.5px solid white; border-top: none; border-left:none; border-right: none" class="list-group-item" href="#"><i style="color:#00ccff" class="fa fa-id-card-o fa-fw" aria-hidden="true"></i>&nbsp; <span style="color:white">Register</span></a>
+                              <a style="background-color: transparent; border-bottom: 0.5px solid white; border-top: none; border-left:none; border-right: none" class="list-group-item" href="#"><i style="color:#00ccff" class="fa fa-envelope-open fa-fw" aria-hidden="true"></i>&nbsp; <span style="color:white">Contact us</span></a>
+                              <a style="background-color: transparent; border-bottom: 0.5px solid white; border-top: none; border-left:none; border-right: none" class="list-group-item" href="#"><i style="color:#00ccff" class="fa fa-user fa-fw" aria-hidden="true"></i>&nbsp; <span style="color:white">About us</span></a>
+                              <br>
+                        </div>
+                  
+                                  
+                      
+                        </div>
+               
+        
+
+                    <div class="col-md-4">                        
+                            <h5 style="padding-top: 15px; padding-bottom: 10px; color: #00ccff; text-align:center;">Contact Information</h5>
+                            <p><i style="color: #00ccff" class="fa fa-map-marker fa-lg"></i><span style="color:white">&nbsp;&nbsp;Address:</span></p>
+                            <p style="color:grey">University of Mauritius, Reduit</p>
+                            <p><i style="color: #00ccff" class="fa fa-phone fa-lg"></i><span style="color:white">&nbsp;&nbsp;Phone:</span></p>
+                            <p style="color:grey">+230 626 3301</p>
+                            <p><i style="color: #00ccff" class="fa fa-envelope-o fa-lg"></i><span style="color:white">&nbsp;&nbsp;Email:</span></p>
+                            <p style="color:grey">thebookcafe@gmail.com</p>
+
+
+                             
+                 
+                            </div>
+
+
+
+                    <div class="col-md-12 text-center" style="background-color:#2d3039; height: 25px">
+                    <p style="color:grey; padding-top:2px; font-size: 12px">&copy The Book Café| Copyrights 2017</p>
+                    </div>
+                        </div>
+                    </div>
+           </footer>
+
+             
+</section>
+ 
+
+</body>
+</html>
+
+

@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Spectral+SC" rel="stylesheet">
+    <style>
+
+    
+  body h1
+  {
+      font-family: 'Spectral SC', serif;
+    }
+body h5
+  {
+      font-family: 'Spectral SC', serif;
+    }
+
+
+.listView .item {
+    margin: 10px 0;
+    padding: 10px 0;
+    border-bottom: 2px solid #e5e5e5;
+    clear: both;
+}
+
+.listView .item-icon {
+    display: table-cell;
+    width: 126px;
+    padding: 0 0 10px;
+    vertical-align: top;
+}
+
+.listView .item-content {
+    display: table-cell;
+    padding: 0 0 10px 20px;
+    vertical-align: top;
+    width: 100%;
+}
+
+.listView .item-author
+ {
+    display: inline-block;
+    padding: 0 0 2px;
+}
+
+.listView .item-author, .listView .item-description
+ {
+    font-size: 13px;
+}
+
+a, a:visited 
+{
+    color: #005CA5;
+    text-decoration: none;
+}
+
+.listView big.item-title
+ {
+    display: block;
+    font-weight: bold;
+}
+
+.listView h3, .listView big.item-title
+ {
+    font-size: 16px;
+    line-height: 1.2em;
+}
+
+.listView .item-details {
+    margin: 6px 0 0;
+}
+
+ul, ol {
+    list-style-type: none;
+}
+
+html, body, article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, div, h1, h2, h3, h4, h5, h6, p, blockquote, dl, dt, dd, ol, ul, li, span, big, small, pre, a, acronym, big, em, img, strong, table, caption, tbody, tfoot, thead, tr, th, td, form, fieldset, label, legend, input, textarea, button {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    border: 0;
+    outline: 0;
+    background: transparent;
+}
+
+user agent stylesheet
+ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+
+.listView .item-details-views {
+    padding: 0 0 0 20px;
+}
+
+.listView .item-details-views, .listView .item-details-favorites, .listView .item-details-comments, .listView .item-details-saleOption {
+    position: relative;
+    cursor: default;
+}
+
+.listView .item-details-favorites {
+    padding: 0 0 0 15px;
+}
+
+.listView .item-details-views, .listView .item-details-favorites, .listView .item-details-comments, .listView .item-details-saleOption {
+    position: relative;
+    cursor: default;
+    }
+
+    .listView .item-description {
+    margin: 14px 0 0;
+    word-wrap: break-word;
+}
+
+.listView .item-author, .listView .item-description {
+    font-size: 13px;
+}
+
+
+
+
+
+
+.para
+{
+  text-align: justify;
+  font-size: 14px;
+  color: white;
+}
+
+
+.backc
+{
+  background-color: #353535;
+
+}
+
+.auth
+{
+  color: #00ccff;
+}
+</style>
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>TBH - Romance Gallery</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/creative.min.css" rel="stylesheet">
+    <link href="css/creative.css" rel="stylesheet">
+    <link href="css/book.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/jpg" href="img/icon/logo1.png">
+
+  </head>
+
+  <body class="background"><!--Class:to implement the background image via css-->
+ 
+
+    <!-- Navigation -->
+    <section>
+    <!-- Navigation -->
+    <div class=" paint">
+    <nav class="navbar navbar-expand-lg navbar-light" id="mainNav" style="background-color: #505257"www>
+      <div class="container">
+        
+        <a class="navbar-brand js-scroll-trigger" href="index.html"><img src="img/logofinal3.png" width="75%"></a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="index.html#index">Home</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="gallery.html#Books">Books</a>
+            </li>
+            
+
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="registration.html#Registration Form">Register</a>
+            </li>
+             <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="contact.html#Contact">Contact us</a>
+            </li>
+
+            </li>
+             <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="us.html#us">About us</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="login.html#login">Login</a>
+            </li>
+
+
+          </ul>
+        
+        </div>
+      </div>
+    </nav>
+    </div>
+</section>
+
+
+  
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/creative.min.js"></script>
+
+
+
+
+
+<body>
+  <section class="slideup">
+
+  <h1 style="text-align: center; color: #00ccff">Romance Books</h1>
+
+
+  <p><center><img src="img/bookwp/romwp1.jpg" alt="Romance Banner" width="1035" height="245"></center></p>
+</section>
+
+  
+<section id="booksList" class="listView books slideup2">
+ <div class="item backc">
+  
+                    <div class="item-icon">
+                        <a href="books/thekingslady.pdf" target="_blank"><img src="img/bookwp/king1.jpg" width="170" alt="The King's Lady"/></a>
+                    </div>
+                    <div class="item-content">
+                        <a style="color: #00ccff" class="item-author auth" href="books/Thekingslady.pdf" target="_blank"/>Lietha Wards</a>
+                        <big class="item-title"><a style="color: #00ccff" class="word-break" href="books/Thekingslady.pdf" target="_blank"/>The King's Lady</a></big>
+                                                    
+                        <p style="color:#bdbdbd"> Romance | English </p>
+                        
+                        <div>
+                     <p class="para">Kate Purnell was a sophisticated young woman. She was raised in a bustling city by her father until he died of a heart attack. Now she had to journey to the wild lands of southern California and live with her cousins. 
+                    <p class="para">Of course she expected something different, maybe a little scary and a little exciting, but nothing could have prepared her for the handsome cowboy Everett King. From the first moment she set eyes on him she was captivated. He was something you read about in the adventure section of the newspaper. She really didn't think men like him existed. Oh, but he did, and he also had some ideas of his own.
+
+                      <br/> </p>
+
+                      <a href="books/Thekingslady.pdf" style="color: #00ccff"  target="_blank" class="para"> To Read more</a>
+                     
+
+                     <hr>
+                                              
+                      </div>
+                                                    
+                    </div>
+                </div>
+
+   
+         </div>
+      </div>
+
+
+<div class="item backc">
+                    <div class="item-icon">
+                        <a href="books/ADarkKissOfRapture.pdf" target="_blank"><img src="img/rombookcover/rapture.jpg" width="170" alt="A Dark Kiss Of Rapture" /></a>ADarkKissOfRapture
+                    </div>
+                    <div class="item-content">
+                        <a style="color: #00ccff" class="item-author" data-bxuid="Sylvia Day" href="books/ADarkKissOfRapture.pdf" target="_blank">Sylvia Day</a>
+                        <big class="item-title"><a style="color: #00ccff"  class="word-break" href="books/ADarkKissOfRapture.pdf" target="_blank">A Dark Kiss Of Rapture</a></big>
+                                                    
+                        <p style="color:#bdbdbd"> Romance | English </p>
+                        
+                        <div>
+                     <p class="para">  Of all the Fallen, Raze’s hungers are some of the darkest and most insatiable. His brazen seductions cost him his wings, leaving him soulless and immortal, the most dangerous of seducers. He has roamed the earth for eons, hunting the rogues of his kind and protecting the humans who provide him with blood and sex. He is content with his life and the transient pleasures that flow through it… until one night and one woman change everything.</p>
+                      <p class="para">Kimberly McAdams is smart, beautiful, and wealthy. She can have any man she wants, but the moment she sets eyes on the lethally stunning Raze she knows he’s the man she needs. As one searingly erotic night burns into something deeper and far more vital than either of them expected, an adversary from Raze’s past sees a chance for revenge. Twisted by hatred, she will take from Raze what was taken from her—the precious gift of love.</p>
+                      
+                         
+                         <a href="books/MaidtotheMafia.pdf" style="color: #00ccff" class="para" target="_blank"> To Read more</a>                     
+                      </div>
+                                                    
+                    </div>
+                </div>
+
+
+
+ <div class="item backc">
+                    <div class="item-icon">
+                        <a href="books/MaidtotheMafia.pdf" target="_blank"><img src="img/rombookcover/maid.jpg" width="170" alt="Maid To The Mafia" /></a>
+                    </div>
+                    <div class="item-content">
+                        <a style="color: #00ccff" class="item-author" data-bxuid="Wanitta Praks" href="books/MaidtotheMafia.pdf" target="_blank">Wanitta Praks</a>
+                        <big class="item-title"><a style="color: #00ccff" class="word-break" href="books/MaidtotheMafia.pdf" target="_blank">Maid To The Mafia</a></big>
+                                                    
+                        <p style="color:#bdbdbd"> Romance | English </p>
+                        
+                        <div>
+                     <p class="para"> Upon uttering the word coffee, Jenny Stone, the smart, resilient, and sharp-tongued girl somehow finds herself paying off her father’s debt by working as a maid to the mafia boss, Giovanni Dente, the obsessive-compulsive coffee drinker with movie star good looks.
+                      <p class="para"> And this is just the beginning of Jenny’s new life.
+
+                       Between serving the man his brew at ungodly hours and doing his dirty work, she also has to attend college, ace her exams, and find a way to contact her father and sister who have abandoned her.</p>
+                      <p class="para"> But within the intricate web Giovanni binds around her, when it comes time for her to leave, she isn’t sure if she can make it out alive, especially when somewhere along the way, she realizes her heart is totally captivated.</p>   
+                      <hr>      
+
+                      <a href="books/Thekingslady.pdf" style="color: #00ccff" class="para" target="_blank"> To Read more</a>               
+                      </div>
+                                                    
+                    </div>
+                </div>
+
+
+<div class="item backc">
+                    <div class="item-icon">
+                        <a href="books/KierasMoon.pdf" target="_blank"><img src="img/rombookcover/moon.jpg" width="170" alt="Kiera's Moon" /></a>
+                    </div>
+                    <div class="item-content">
+                        <a style="color: #00ccff" class="item-author" data-bxuid="Lizzy Ford" href="books/KierasMoon.pdf" target="_blank">Lizzy Ford</a>
+                        <big class="item-title"><a style="color: #00ccff" class="word-break" href="books/KierasMoon.pdf" target="_blank">Kiera's Moon</a></big>
+                                                    
+                        <p style="color:#bdbdbd"> Romance | English </p>
+                        
+                        <div>
+                     <p class="para"> When starving artist Kiera wakes up on board a spaceship, she panics. Her best friend has dragged her across the universe to help her find a man and a life, only the man she ends up unwittingly hooking up with is a battle-hardened warrior prince living in exile.  
+                      <p class="para">Calculating, cautious A'Ran wants nothing more than to reclaim his planet. He needs Kiera as his lifemate to heal his planet and his war weary people. He's not prepared to be a lifemate himself, and discovers almost too late what he risks losing if he can't learn to be more than a warrior.</p>
+                      
+
+                      <a href="books/KierasMoon.pdf" style="color: #00ccff" class="para" target="_blank"> To Read more</a>
+                                            
+                      </div>
+                                                    
+                    </div>
+                </div>
+
+<div class="item backc">
+                    <div class="item-icon">
+                        <a href="books/Blindsight.pdf" target="_blank"><img src="img/rombookcover/4.jpg" width="170" alt="Blindsight" /></a>
+                    </div>
+                    <div class="item-content">
+                        <a style="color: #00ccff" class="item-author" data-bxuid="Kait Nolan" href="books/Blindsight.pdf" target="_blank">Kait Nolan</a>
+                        <big class="item-title"><a style="color: #00ccff" class="word-break" href="books/Blindsight.pdf" target="_blank">Blindsight</a></big>
+                                                    
+                        <p style="color:#bdbdbd"> Romance | English </p>
+                        
+                        <div>
+                     <p class="para"> Kait Nolan's Mirus series is set in a paranormal world unlike any you've visited before—inventive new mythology full of fast-paced action, dark dangers, sparkling magic, and sizzling, undeniable attraction.
+                      <p
+                      class="para"> Isla's ability as a Seer has made her a life-long captive of a paranormal crime lord. Fae assassin, Ransom, offers her a chance at escape, but when she touches his hand she sees only blood, horror, apocalypse. What reason can Ransom have for wanting to rescue her, and can she possibly trust a man who deals in death? 
+                      </p>
+                      
+
+                      <a href="books/Blindsight.pdf" style="color: #00ccff" class="para" target="_blank"> To Read more</a>
+                                              
+                      </div>
+                                                    
+                    </div>
+                </div>
+
+  <div class="item backc">
+                    <div class="item-icon">
+                        <a href="books/LumberAndLace.pdf" target="_blank"><img src="img/bookwp/lace.jpg" width="170" alt="Lumber and Lace" /></a>
+                    </div>
+                    <div class="item-content">
+                        <a style="color: #00ccff" class="item-author" data-bxuid="Leitha Wards" href="books/LumberAndLace.pdf" target="_blank">Leitha Wards</a>
+                        <big class="item-title"><a style="color: #00ccff" class="word-break" href="books/LumberAndLace.pdf" target="_blank">Lumber and Lace</a></big>
+                                                    
+                        <p style="color:#bdbdbd"> Romance | English </p>
+                        
+                        <div>
+                     <p class="para"> Cara had four brothers and a gorgeous room-mate that she was bringing home from college to work for her family for the summer. The only problem was, her brothers were womanizers and Brianne was terrified of men. When Jeb, her oldest brother first met her, he vowed to make her his despite her fears. </p>
+                      
+                      <a href="books/LumberAndLace.pdf" style="color: #00ccff" class="para" target="_blank"> To Read more</a>
+                                              
+                      </div>
+                                                    
+                    </div>
+                </div>
+
+
+
+</section>
+</div>
+
+
+</section>
+</div>
+   <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/creative.min.js"></script>
+
+
+ <section>
+
+ <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                          <h5 style="padding-top: 15px; padding-bottom: 10px; color: #00ccff">THE BOOK CAFE</h5>
+                            <p style="color:#fdebe7; text-align: justify;">
+                               This is a special website dedicated to all those who have an incredible passion for reading. You will find an array of books categorised for every age group and for every genres. Its the perfect spot where you will be able to relish and cherish every minute of your daily reading quota. Also, there is specific corner designed where you will find motivational and inspiring quotes which will boost your state of mind and help you to enjoy your day.
+                            </p>
+                        </div>
+                  
+
+                    <div class="col-md-4">                        
+                            <h5 style="padding-top: 15px; padding-bottom: 10px; color: #00ccff; text-align: center;">Useful links</h5>
+
+                            <div class="list-group">
+                              <a style="background-color: transparent; border-bottom: 0.5px solid white; border-top: none; border-left:none; border-right: none" class="list-group-item" href="#"><i style="color:#00ccff" class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp; <span style="color:white">Home</span></a>
+                              <a style="background-color: transparent; border-bottom: 0.5px solid white; border-top: none; border-left:none; border-right: none" class="list-group-item" href="#"><i style="color:#00ccff" class="fa fa-pencil fa-fw" aria-hidden="true"></i>&nbsp; <span style="color:white">Writer's Corner</span></a>
+                              <a style="background-color: transparent; border-bottom: 0.5px solid white; border-top: none; border-left:none; border-right: none" class="list-group-item" href="#"><i style="color:#00ccff" class="fa fa-id-card-o fa-fw" aria-hidden="true"></i>&nbsp; <span style="color:white">Register</span></a>
+                              <a style="background-color: transparent; border-bottom: 0.5px solid white; border-top: none; border-left:none; border-right: none" class="list-group-item" href="#"><i style="color:#00ccff" class="fa fa-envelope-open fa-fw" aria-hidden="true"></i>&nbsp; <span style="color:white">Contact us</span></a>
+                              <a style="background-color: transparent; border-bottom: 0.5px solid white; border-top: none; border-left:none; border-right: none" class="list-group-item" href="#"><i style="color:#00ccff" class="fa fa-user fa-fw" aria-hidden="true"></i>&nbsp; <span style="color:white">About us</span></a>
+                              <br>
+                        </div>
+                  
+                                  
+                      
+                        </div>
+               
+        
+
+                    <div class="col-md-4">                        
+                            <h5 style="padding-top: 15px; padding-bottom: 10px; color: #00ccff; text-align:center;">Contact Information</h5>
+                            <p><i style="color: #00ccff" class="fa fa-map-marker fa-lg"></i><span style="color:white">&nbsp;&nbsp;Address:</span></p>
+                            <p style="color:grey">University of Mauritius, Reduit</p>
+                            <p><i style="color: #00ccff" class="fa fa-phone fa-lg"></i><span style="color:white">&nbsp;&nbsp;Phone:</span></p>
+                            <p style="color:grey">+230 626 3301</p>
+                            <p><i style="color: #00ccff" class="fa fa-envelope-o fa-lg"></i><span style="color:white">&nbsp;&nbsp;Email:</span></p>
+                            <p style="color:grey">thebookcafe@gmail.com</p>
+
+
+                             
+                 
+                            </div>
+
+
+
+                    <div class="col-md-12 text-center" style="background-color:#2d3039; height: 25px">
+                    <p style="color:grey; padding-top:2px; font-size: 12px">&copy The Book Café| Copyrights 2017</p>
+                    </div>
+                        </div>
+                    </div>
+           </footer>
+
+             
+</section>
+ 
+
+
+</body>
+</html>
+
+

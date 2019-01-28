@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Spectral+SC" rel="stylesheet">
+    <style>
+
+  body h1
+  {
+      font-family: 'Spectral SC', serif;
+    }
+body h5
+  {
+      font-family: 'Spectral SC', serif;
+    }
+
+.listView .item {
+    margin: 10px 0;
+    padding: 10px 0;
+    border-bottom: 2px solid #e5e5e5;
+    clear: both;
+}
+
+.listView .item-icon {
+    display: table-cell;
+    width: 126px;
+    padding: 0 0 10px;
+    vertical-align: top;
+}
+
+.listView .item-content {
+    display: table-cell;
+    padding: 0 0 10px 20px;
+    vertical-align: top;
+    width: 100%;
+}
+
+.listView .item-author
+ {
+    display: inline-block;
+    padding: 0 0 2px;
+}
+
+.listView .item-author, .listView .item-description
+ {
+    font-size: 13px;
+}
+
+a, a:visited 
+{
+    color: #005CA5;
+    text-decoration: none;
+}
+
+.listView big.item-title
+ {
+    display: block;
+    font-weight: bold;
+}
+
+.listView h3, .listView big.item-title
+ {
+    font-size: 16px;
+    line-height: 1.2em;
+}
+
+.listView .item-details {
+    margin: 6px 0 0;
+}
+
+ul, ol {
+    list-style-type: none;
+}
+
+html, body, article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, div, h1, h2, h3, h4, h5, h6, p, blockquote, dl, dt, dd, ol, ul, li, span, big, small, pre, a, acronym, big, em, img, strong, table, caption, tbody, tfoot, thead, tr, th, td, form, fieldset, label, legend, input, textarea, button {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    border: 0;
+    outline: 0;
+    background: transparent;
+}
+
+user agent stylesheet
+ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+
+.listView .item-details-views {
+    padding: 0 0 0 20px;
+}
+
+.listView .item-details-views, .listView .item-details-favorites, .listView .item-details-comments, .listView .item-details-saleOption {
+    position: relative;
+    cursor: default;
+}
+
+.listView .item-details-favorites {
+    padding: 0 0 0 15px;
+}
+
+.listView .item-details-views, .listView .item-details-favorites, .listView .item-details-comments, .listView .item-details-saleOption {
+    position: relative;
+    cursor: default;
+    }
+
+    .listView .item-description {
+    margin: 14px 0 0;
+    word-wrap: break-word;
+}
+
+.listView .item-author, .listView .item-description {
+    font-size: 13px;
+}
+
+
+
+
+
+
+.para
+{
+  text-align: justify;
+  font-size: 14px;
+  color: white;
+}
+
+
+.backc
+{
+  background-color: #353535;
+
+}
+
+.auth
+{
+  color: #00ccff;
+}
+</style>
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>TBH - Romance Gallery</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/creative.min.css" rel="stylesheet">
+    <link href="css/creative.css" rel="stylesheet">
+    <link href="css/book.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/jpg" href="img/icon/logo1.png">
+
+  </head>
+
+  <body class="background"><!--Class:to implement the background image via css-->
+ 
+
+    <section>
+    <!-- Navigation -->
+    <div class=" paint">
+    <nav class="navbar navbar-expand-lg navbar-light" id="mainNav" style="background-color: #505257">
+      <div class="container">
+        
+        <a class="navbar-brand js-scroll-trigger" href="index.html"><img src="img/logofinal3.png" width="75%"></a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="index.html#index">Home</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="gallery.html#Books">Books</a>
+            </li>
+            
+
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="registration.html#Registration Form">Register</a>
+            </li>
+             <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="contact.html#Contact">Contact us</a>
+            </li>
+
+            </li>
+             <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="us.html#us">About us</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="login.html#login">Login</a>
+            </li>
+
+
+          </ul>
+        
+        </div>
+      </div>
+    </nav>
+    </div>
+</section>
+
+
+  
+
+
+
+
+<body>
+  <section class="slideup">
+
+  <h1 style="text-align: center; color: #00ccff ">Thriller Books</h1>
+  
+
+
+  <p><center><img src="img/bookwp/Thriller.png" alt="Thriller Banner" width="1035" height="245"></center></p>
+</section>
+
+  
+<section id="booksList" class="listView books slideup2">
+ <div class="item backc">
+  
+                    <div class="item-icon">
+                        <a href="books/Heartspider.pdf" target="_blank"><img src="img/bookwp/heart of spider.jpg" width="170" alt="Heart Of Spider"/></a>
+                    </div>
+                    <div class="item-content">
+                        <a style="color: #00ccff" class="item-author auth" href="books/Heartspider.pdf" target="_blank"/>Mark Stewart</a>
+                        <big class="item-title "><a class="word-break" href="books/Heartspider.pdf" target="_blank" style="color: #00ccff">Heart Of Spider</a></big>
+                                                    
+                        <p style="color:#bdbdbd"> Thriller | English </p>
+                        
+                        <div>
+                     <p class="para">Detective Kendal is chasing a patient who has escaped from the mental institution. He wants to sever Kendal's lifeline. The chase is complicated by the visitation of a ghost and a supposed vigilante. Kendal is to meet the man at midnight at the end of a wharf. Kendal's partner, on stake out, is approached by the accomplice who was involved in the murder of her husband six months in the past.
+                      <br/> </p>
+
+                      <a href="books/Heartspider.pdf" style="color: #00ccff" class="para" target="_blank"> To Read more</a>
+                     
+
+                     
+                                              
+                      </div>
+                                                    
+                    </div>
+                </div>
+
+   
+         </div>
+      </div>
+
+
+<div class="item backc">
+                    <div class="item-icon">
+                        <a href="books/MayDayMurders.pdf" target="_blank"><img src="img/bookwp/May Day Murders.jpg" width="170" alt="The May Day Murders" /></a>
+                    </div>
+                    <div class="item-content">
+                        <a style="color: #00ccff" class="item-author" data-bxuid="Scott Wittenburg" href="books/MayDayMurders.pdf" target="_blank">Scott Wittenburg</a>
+                        <big class="item-title"><a style="color: #00ccff" class="word-break" href="books/MayDayMurders.pdf" target="_blank">The May Day Murders</a></big>
+                                                    
+                        <p style="color:#bdbdbd"> Thriller | English </p>
+                        
+                        <div>
+                     <p class="para">  The autumnal tranquility of Smithtown, Ohio is shattered when Dr. David Bradley arrives home to find that his wife has been raped and murdered by an intruder who has left no clues behind except the words "May Day" painted in lipstick on his victim's body. When the police later learn that another Smithtown resident has been raped and strangled in New York City, it becomes frighteningly clear that a cunning serial killer targeting Smithtown women is on the prowl. Newspaper reporter Sam Middleton is determined to help Detective Roger Hagstrom track down the assailant of his ex-wife's best friend and everyone is asking the same question as the mystery unfolds: Who will the killer's next victim be?</p>
+                        <br/> </p>
+
+                        <a href="books/MayDayMurders.pdf" style="color: #00ccff" class="para" target="_blank"> To Read more</a>
+                              
+                                             
+                      </div>
+                                                    
+                    </div>
+                </div>
+
+
+
+ <div class="item backc">
+                    <div class="item-icon">
+                        <a href="books/painless.pdf" target="_blank"><img src="img/bookwp/painless.jpg" width="170" alt="Painless" /></a>
+                    </div>
+                    <div class="item-content">
+                        <a style="color: #00ccff" class="item-author" data-bxuid="Derek Ciccone" href="books/painless.pdf" target="_blank">Derek Ciccone</a>
+                        <big class="item-title"><a style="color: #00ccff" class="word-break" href="books/painless.pdf" target="_blank">Painless</a></big>
+                                                    
+                        <p style="color:#bdbdbd"> Thriller | English</p>
+                        
+                        <div>
+                     <p class="para"> Pain means you're still alive. 
+                      Billy Harper is trying to pick up the pieces of his shattered life when he rents a cottage on the property of Chuck and Beth Whitcomb in New Canaan, Connecticut. He's had everything that matters stolen from him, leaving his heart numb. But when he meets the Whitcomb's four-year-old daughter, Carolyn, she teaches him what it is to live again, and his heart begins to thaw. 
+                      But a series of ominous incidents make it apparent that there is something very wrong with Carolyn Whitcomb. It escalates to an incident so surreal that Billy wonders if she might be an alien, or maybe she truly is his angel. But when a rogue military organization called Operation Anesthesia learns of Carolyn's "gifts," Billy must risk everything to save the life of the little girl who helped him to live again. 
+                      Derek Ciccone is an avid fiction writer who has written eight novels. Painlessis the first one to be published. Derek grew up in Connecticut and attended Arizona State University, where he graduated with a degree in Political Science. He now resides back in Connecticut and works as a Marketing Analyst for an advertising agency. 
+                     </p>
+                     <br/> </p>
+
+                        <a href="books/painless.pdf" style="color: #00ccff" class="para" target="_blank"> To Read more</a>
+                                 
+
+                      </div>
+                                                    
+                    </div>
+                </div>
+
+
+<div class="item backc">
+                    <div class="item-icon">
+                        <a href="books/shortfuses.pdf" target="_blank"><img src="img/bookwp/shortFuses.jpg" width="170" alt="Short Fuses" /></a>
+                    </div>
+                    <div class="item-content">
+                        <a style="color: #00ccff" class="item-author" data-bxuid="Stephen Leather" href="books/shortfuses.pdf" target="_blank">Stephen Leather</a>
+                        <big class="item-title"><a style="color: #00ccff" class="word-break" href="books/shortfuses.pdf" target="_blank">Short Fuses</a></big>
+                                                    
+                        <p style="color:#bdbdbd"> Thriller | English</p>
+                        
+                        <div>
+                     <p class="para"> Four free short stories from bestselling author Stephen Leather, plus opening chapters of six of his bestselling thrillers.
+
+                      The short stories are: Breaking In (where a burglar gets more than he bargained for when he breaks into a London house), Strangers On A Train (where a mugging on a train doesn't go to plan), Inspector Zhang and the Hotel Guest (where the Singaporean detective solves a mystery) and Cat's Eyes (the backstory of a Bangkok go-go dancer).
+
+                      There are also tasters of six of his bestselling novels, including The Chinaman, The Vets and The Birthday Girl.
+
+                      Stephen Leather is one of the UK's most successful thriller writers. He was a journalist for more than ten years on newspapers such as The Times, the Daily Mail and the South China Morning Post in Hong Kong. Before that, he was employed as a biochemist for ICI, shovelled limestone in a quarry, worked as a baker, a petrol pump attendant, a barman, and worked for the Inland Revenue. He began writing full time in 1992. His bestsellers have been translated into more than ten languages. He has also written for television shows such as London's Burning, The Knock and the BBC's Murder in Mind series. Two of his books, The Stretch and The Bombmaker, were made into movies.
+                      <br/> </p>
+                         <a href="books/shortfuses.pdf" style="color: #00ccff" class="para" target="_blank"> To Read more</a>                    
+                      </div>
+                                                    
+                    </div>
+                </div>
+
+<div class="item backc">
+                    <div class="item-icon">
+                        <a href="books/The narcissist.pdf" target="_blank"><img src="img/bookwp/the narcissist.jpg" width="170" alt="The Narcissist" /></a>
+                    </div>
+                    <div class="item-content">
+                        <a style="color: #00ccff" class="item-author" data-bxuid="David M. Antonelli" href="books/The narcissist.pdf" target="_blank">David M. Antonelli</a>
+                        <big class="item-title"><a style="color: #00ccff" class="word-break" href="books/The narcissist.pdf" target="_blank">The Narcissist</a></big>
+                                                    
+                        <p style="color:#bdbdbd"> Thriller | English </p>
+                        
+                        <div>
+                     <p class="para">A man returns from Algeria in search of his lover only to have her vanish mysteriously just days later. Refusing to admit that she is dead, he believes that the secret of her disappearance lies in the works of the French surrealist poet Antonin Artaud. The Narcissist is a stylish Film Noir classic dreamed up by Rimbaud and written by Celine, a work of literary fiction that defies categorization.
+                      <br/> </p>
+                             <a href="books/The narcissist.pdf" style="color: #00ccff" class="para" target="_blank"> To Read more</a>                 
+
+
+                      </div>
+                                                    
+                    </div>
+                </div>
+
+  <div class="item backc">
+                    <div class="item-icon">
+                        <a href="books/200StepsDown.pdf" target="_blank"><img src="img/bookwp/200 steps down.jpg" width="170" alt="200 Steps Down" /></a>
+                    </div>
+                    <div class="item-content">
+                        <a style="color: #00ccff" class="item-author" data-bxuid="Morris Kenyon" href="books/200StepsDown.pdf" target="_blank">Morris Kenyon</a>
+                        <big class="item-title"><a  style="color: #00ccff" class="word-break" href="books/200StepsDown.pdf" target="_blank">200 Steps Down</a></big>
+                                                    
+                        <p style="color:#bdbdbd"> Thriller | English </p>
+                        
+                        <div>
+                     <p class="para"> When his crime boss in Odessa, Ukraine, decides to up his game by getting involved in people trafficking, Nicolae Caramarin must make a choice. Should he turn a blind eye to the horrors he witnesses and carry on being a good soldier for the gang; or take his stand and bring them all down in the only way he knows how?
+
+                    A fast-paced, tense and exciting crime/noir thriller.
+
+                    This book contains scenes of a sexual nature, graphic violence, strong language and drug abuse. It is not intended for the easily offended or persons under eighteen years. You have been warned, so if you read on, don't blame me.
+                                <br/> </p>        
+                       <a href="books/200StepsDown.pdf" style="color: #00ccff" class="para" target="_blank"> To Read more</a>      
+                      
+                          
+                      </div>
+                                                    
+                    </div>
+                </div>
+
+
+
+</section>
+</div>
+ 
+
+ <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/creative.min.js"></script>
+
+
+ <section>
+
+ <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                          <h5 style="padding-top: 15px; padding-bottom: 10px; color: #00ccff">THE BOOK CAFE</h5>
+                            <p style="color:#fdebe7; text-align: justify;">
+                               This is a special website dedicated to all those who have an incredible passion for reading. You will find an array of books categorised for every age group and for every genres. Its the perfect spot where you will be able to relish and cherish every minute of your daily reading quota. Also, there is specific corner designed where you will find motivational and inspiring quotes which will boost your state of mind and help you to enjoy your day.
+                            </p>
+                        </div>
+                  
+
+                    <div class="col-md-4">                        
+                            <h5 style="padding-top: 15px; padding-bottom: 10px; color: #00ccff; text-align: center;">Useful links</h5>
+
+                            <div class="list-group">
+                              <a style="background-color: transparent; border-bottom: 0.5px solid white; border-top: none; border-left:none; border-right: none" class="list-group-item" href="#"><i style="color:#00ccff" class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp; <span style="color:white">Home</span></a>
+                              <a style="background-color: transparent; border-bottom: 0.5px solid white; border-top: none; border-left:none; border-right: none" class="list-group-item" href="#"><i style="color:#00ccff" class="fa fa-pencil fa-fw" aria-hidden="true"></i>&nbsp; <span style="color:white">Writer's Corner</span></a>
+                              <a style="background-color: transparent; border-bottom: 0.5px solid white; border-top: none; border-left:none; border-right: none" class="list-group-item" href="#"><i style="color:#00ccff" class="fa fa-id-card-o fa-fw" aria-hidden="true"></i>&nbsp; <span style="color:white">Register</span></a>
+                              <a style="background-color: transparent; border-bottom: 0.5px solid white; border-top: none; border-left:none; border-right: none" class="list-group-item" href="#"><i style="color:#00ccff" class="fa fa-envelope-open fa-fw" aria-hidden="true"></i>&nbsp; <span style="color:white">Contact us</span></a>
+                              <a style="background-color: transparent; border-bottom: 0.5px solid white; border-top: none; border-left:none; border-right: none" class="list-group-item" href="#"><i style="color:#00ccff" class="fa fa-user fa-fw" aria-hidden="true"></i>&nbsp; <span style="color:white">About us</span></a>
+                              <br>
+                        </div>
+                  
+                                  
+                      
+                        </div>
+               
+        
+
+                    <div class="col-md-4">                        
+                            <h5 style="padding-top: 15px; padding-bottom: 10px; color: #00ccff; text-align:center;">Contact Information</h5>
+                            <p><i style="color: #00ccff" class="fa fa-map-marker fa-lg"></i><span style="color:white">&nbsp;&nbsp;Address:</span></p>
+                            <p style="color:grey">University of Mauritius, Reduit</p>
+                            <p><i style="color: #00ccff" class="fa fa-phone fa-lg"></i><span style="color:white">&nbsp;&nbsp;Phone:</span></p>
+                            <p style="color:grey">+230 626 3301</p>
+                            <p><i style="color: #00ccff" class="fa fa-envelope-o fa-lg"></i><span style="color:white">&nbsp;&nbsp;Email:</span></p>
+                            <p style="color:grey">thebookcafe@gmail.com</p>
+
+
+                             
+                 
+                            </div>
+
+
+
+                    <div class="col-md-12 text-center" style="background-color:#2d3039; height: 25px">
+                    <p style="color:grey; padding-top:2px; font-size: 12px">&copy The Book Café| Copyrights 2017</p>
+                    </div>
+                        </div>
+                    </div>
+           </footer>
+
+             
+</section>
+
+
+</body>
+</html>

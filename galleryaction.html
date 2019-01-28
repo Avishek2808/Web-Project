@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Spectral+SC" rel="stylesheet">
+    <style>
+
+  body h1
+  {
+      font-family: 'Spectral SC', serif;
+    }
+body h5
+  {
+      font-family: 'Spectral SC', serif;
+    }
+
+.listView .item {
+    margin: 10px 0;
+    padding: 10px 0;
+    border-bottom: 2px solid #e5e5e5;
+    clear: both;
+}
+
+.listView .item-icon {
+    display: table-cell;
+    width: 126px;
+    padding: 0 0 10px;
+    vertical-align: top;
+}
+
+.listView .item-content {
+    display: table-cell;
+    padding: 0 0 10px 20px;
+    vertical-align: top;
+    width: 100%;
+}
+
+.listView .item-author
+ {
+    display: inline-block;
+    padding: 0 0 2px;
+}
+
+.listView .item-author, .listView .item-description
+ {
+    font-size: 13px;
+}
+
+a, a:visited 
+{
+    color: #005CA5;
+    text-decoration: none;
+}
+
+.listView big.item-title
+ {
+    display: block;
+    font-weight: bold;
+}
+
+.listView h3, .listView big.item-title
+ {
+    font-size: 16px;
+    line-height: 1.2em;
+}
+
+.listView .item-details {
+    margin: 6px 0 0;
+}
+
+ul, ol {
+    list-style-type: none;
+}
+
+html, body, article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, div, h1, h2, h3, h4, h5, h6, p, blockquote, dl, dt, dd, ol, ul, li, span, big, small, pre, a, acronym, big, em, img, strong, table, caption, tbody, tfoot, thead, tr, th, td, form, fieldset, label, legend, input, textarea, button {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    border: 0;
+    outline: 0;
+    background: transparent;
+}
+
+user agent stylesheet
+ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+
+.listView .item-details-views {
+    padding: 0 0 0 20px;
+}
+
+.listView .item-details-views, .listView .item-details-favorites, .listView .item-details-comments, .listView .item-details-saleOption {
+    position: relative;
+    cursor: default;
+}
+
+.listView .item-details-favorites {
+    padding: 0 0 0 15px;
+}
+
+.listView .item-details-views, .listView .item-details-favorites, .listView .item-details-comments, .listView .item-details-saleOption {
+    position: relative;
+    cursor: default;
+    }
+
+    .listView .item-description {
+    margin: 14px 0 0;
+    word-wrap: break-word;
+}
+
+.listView .item-author, .listView .item-description {
+    font-size: 13px;
+}
+
+
+
+
+
+
+.para
+{
+  text-align: justify;
+  font-size: 14px;
+  color: white;
+}
+
+
+.backc
+{
+  background-color: #353535;
+
+}
+
+.auth
+{
+  color: #F05F40;
+}
+</style>
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>TBH - Romance Gallery</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/creative.min.css" rel="stylesheet">
+    <link href="css/creative.css" rel="stylesheet">
+
+    <link href="css/book.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/jpg" href="img/icon/logo1.png">
+
+  </head>
+
+  <body class="background"><!--Class:to implement the background image via css-->
+ 
+<section>
+    <!-- Navigation -->
+    <div class=" paint">
+    <nav class="navbar navbar-expand-lg navbar-light" id="mainNav" style="background-color: #505257">
+      <div class="container">
+        
+        <a class="navbar-brand js-scroll-trigger" href="index.html"><img src="img/logofinal3.png" width="75%"></a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="index.html#index">Home</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="gallery.html#Books">Books</a>
+            </li>
+            
+
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="registration.html#Registration Form">Register</a>
+            </li>
+             <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="contact.html#Contact">Contact us</a>
+            </li>
+
+            </li>
+             <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="us.html#us">About us</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="login.html#login">Login</a>
+            </li>
+
+
+          </ul>
+        
+        </div>
+      </div>
+    </nav>
+    </div>
+</section>
+
+  
+
+    
+
+
+
+<body>
+  <section class="slideup">
+
+  <h1 style="text-align: center; color: #00ccff"> Action And Adventures Books</h1>
+
+
+  <p><center><img src="img/bookwp/action.jpg" alt="Action And Adventures Banner" width="1035" height="245"></center></p>
+</section>
+
+  
+<section id="booksList" class="listView books slideup2">
+ <div class="item backc">
+  
+                    <div class="item-icon">
+                        <a href="books/Dense-Dimmock.pdf"><img src="img/bookwp/dense.jpg" width="170" alt="Dense Dimmock Aventures"/></a>
+                    </div>
+                    <div class="item-content">
+                        <a style="color: #00ccff" class="item-author auth" href="books/Dense-Dimmock.pdf"/>Paddy O'Farrel</a>
+                        <big class="item-title"><a style="color: #00ccff" class="word-break" href="books/Dense-Dimmock.pdf"/>Dense Dimmock Aventures</a></big>
+                                                    
+                        <p style="color:#bdbdbd"> Action And Adventures | English </p>
+                        
+                        <div>
+                     <p class="para"> In the sleepy village of Muddlecombe-cum-Snoring lives Dense Dimmock, village idiot and part time MI6 consultant who is called upon to rescue a Scottish oil executive kidnapped in Azerbaijan. He is smuggled out to Azerbaijan with the help of the RAF but is himself then kidnapped. His village drinking partner Boris, retired KGB assassin, pops home to the Ukraine to raise a small army of Cossacks to help out and arrives in Azerbaijan to find his pal has been hoodwinked by Nickola Elastickova, the beautiful moll of the local warlord Igor Badlotski who is holed up in a small castle just outside Baku. Heads roll as they capture the castle and find Dense and Nickola in a compromising situation but manage find to the whereabouts of the oilman who is held up country. Disguised as a choir the Cossacks et al manage to release him but wake up the countryside and a local freelance reporter who realises he has a scoop on is hands. News spreads worldwide much to the annoyance of the Prime Minister who calls on the head of MI6 to explain who is embarrassed by the lack of information. Heads start to roll in the UK..
+                      <br/> </p>
+
+                      <a href="books/Dense-Dimmock.pdf" style="color: #00ccff" class="para"> To Read more</a>
+                                              
+                      </div>
+                                                    
+                    </div>
+                </div>
+
+   
+         </div>
+      </div>
+
+
+<div class="item backc">
+                    <div class="item-icon">
+                        <a href="books/Son of Sparta.pdf"><img src="img/bookwp/sparta.jpg" width="170" alt="Son of Sparta" /></a>
+                    </div>
+                    <div class="item-content">
+                        <a style="color: #00ccff" class="item-author" data-bxuid="Sara Reinke" href="books/Son of Sparta.pdf">Sara Reinke</a>
+                        <big class="item-title"><a style="color: #00ccff" class="word-break" href="books/Son of Sparta.pdf">Son of Sparta</a></big>
+                                                    
+                        <p style="color:#bdbdbd"> Action And Adventures | English </p>
+                        
+                        <div>
+                     <p class="para"> Echelas was born in fifth-century Sparta, with the golden hair said to herald favor from the gods. However, if his life has been divinely blessed, Echelas would not have believed it. From his brutal childhood in the wilds to an adolescence spent mastering the art of war, Echelas has constantly struggled to prove himself a true son of Sparta. Framed for murder and awaiting the inevitable moment of his execution, Echelas is left dependent on the word of a mad, deposed king to see him vindicated.
+                      </p>
+                      <p class="para">From his prison cell, Echelas recounts his life and those who have graced it, including Elara, a young woman he is forbidden to love but who he is helpless to resist. Even as he tells his tale, a new threat is rising in the east. The massive armies of the Persian empire are advancing and they mean to conquer not only Sparta, but the entire Greek world with it. Echelas soon finds himself faced with an even greater challenge as he must join the Greek forces in their valiant, defiant stand against the Persian invasion, taking his place along the front lines and shield walls of one of the most heroic and bloody battles in history.</p>
+                      <br/> </p>
+
+                      <a href="books/Son of Sparta.pdf" style="color: #00ccff" class="para"> To Read more</a>
+                                              
+                      </div>
+                                                    
+                    </div>
+                </div>
+
+
+
+ <div class="item backc">
+                    <div class="item-icon">
+                        <a href="books/ABrieferHistoryofTime.pdf"><img src="img/bookwp/time.jpg" width="170" alt="A Briefer History Of Time" /></a>
+                    </div>
+                    <div class="item-content">
+                        <a style="color: #00ccff" class="item-author" data-bxuid="Eric Schulman" href="books/ABrieferHistoryofTime.pdf">Eric Schulman</a>
+                        <big class="item-title"><a style="color: #00ccff" class="word-break" href="books/ABrieferHistoryofTime.pdf">A Briefer History Of Time</a></big>
+                                                    
+                        <p style="color:#bdbdbd"> Action And Adventures | English </p>
+                        
+                        <div>
+                     <p class="para"> A Briefer History of Time is a science humor book by the American astronomer Eric Schulman. In this book, Schulman presents humorous summaries of what he claims are the fifty-three most important events since the beginning of time.[1][2][3] The title and cover are a parody of Stephen Hawking's book A Brief History of Time. Coincidentally, Hawking would later write a "sequel" entitled A Briefer History of Time. Hawking's publisher Bantam Books was aware the title had already been used in a popular science book, but went ahead since "The other book was published six years ago, and Professor Hawking is an international figure.</p>   
+                     <br/> </p>
+
+                      <a href="books/ABrieferHistoryofTime.pdf" style="color: #00ccff" class="para"> To Read more</a>
+                     
+
+                                        
+                      </div>
+                                                    
+                    </div>
+                </div>
+
+
+<div class="item backc">
+                    <div class="item-icon">
+                        <a href="books/Shaman.pdf"><img src="img/bookwp/shaman.jpg" width="170" alt="Shaman" /></a>
+                    </div>
+                    <div class="item-content">
+                        <a style="color: #00ccff" class="item-author" data-bxuid="Robert J. Shea" href="books/Shaman.pdf">Robert J. Shea</a>
+                        <big class="item-title"><a style="color: #00ccff" class="word-break" href="books/Shaman.pdf">Shaman</a></big>
+                                                    
+                        <p style="color:#bdbdbd"> Action And Adventures | English </p>
+                        
+                        <div>
+                     <p class="para">"In Shaman we live again an all but-forgotten chapter of American history, replete with adventure, violence and eroticism - the compelling and often horrific account of a collision between two cultures so different that one of them has to be wiped off the face of the earth."
+  
+                      <p class="para">It was a time of bloody confrontation between the white man and the red man, a time when the pioneers of a new nation were pushing out across the Great Plains and yet the powerful spirits of an ancient mystical religion still held sway over the Indians. In this troubled, dangerous time, there is a man who has the privilege - and the curse - of belonging to both worlds. He is Gray Cloud, a disciple of the aging shaman Owl Carver. A handsome young half-breed, he is chosen by the Great Turtle to become the mystical leader of the Sauk people...and summoned by his French-born aristocratic father to inherit the vast estate of Victoire.
+                        <p class="para">Here is the riveting drama of Gray Cloud's transformation into the powerful shaman White Bear, and his desperate struggle to reconcile the opposing forces of his white and Indian heritage. It is a sweeping epic of mysticism and history, of bitter love and brutal warfare, and of the tragic fate of an ancient people.
+                      </p>
+                     <br/> </p>
+
+                      <a href="books/Shaman.pdf" style="color: #00ccff" class="para"> To Read more</a>
+                                            
+                      </div>
+                                                    
+                    </div>
+                </div>
+
+<div class="item backc">
+                    <div class="item-icon">
+                        <a href="books/The-Devil-is-a-Woman.pdf"><img src="img/bookwp/devil.jpg" width="170" alt="The Devil is a Woman" /></a>
+                    </div>
+                    <div class="item-content">
+                        <a style="color: #00ccff" class="item-author" data-bxuid="J. M. Munro" href="books/The-Devil-is-a-Woman.pdf">J. M. Munro</a>
+                        <big class="item-title"><a style="color: #00ccff" class="word-break" href="books/The-Devil-is-a-Woman.pdf">The Devil is a Woman</a></big>
+                                                    
+                        <p style="color:#bdbdbd"> Action And Adventures | English </p>
+                        
+                        <div>
+                     <p class="para">Having made her way up from Spain to France and left (she hopes!) her life as a prostitute behind her, the half-Scottish half-Spanish Mariana de la Mar (Marian MacElpin) is now an unofficial student at the university in Paris. Unofficial, because women are not admitted to lectures, so she has to pretend to be a man. But it is to her that the other students turn when one is charged with the murder of his rich uncle, a miser and reputed alchemist.
+                      </p>
+                      <br/> </p>
+
+                      <a href="books/The-Devil-is-a-Woman.pdf" style="color: #00ccff" class="para"> To Read more</a>
+                                              
+                      </div>
+                                                    
+                    </div>
+                </div>
+
+  <div class="item backc">
+                    <div class="item-icon">
+                        <a href="books/The-Fox.pdf"><img src="img/bookwp/fox.jpg" width="170" alt="The Fox" /></a>
+                    </div>
+                    <div class="item-content">
+                        <a style="color: #00ccff" class="item-author" data-bxuid="Arlene Radasky" href="books/The-Fox.pdf">Arlene Radasky</a>
+                        <big class="item-title"><a style="color: #00ccff" class="word-break" href="books/The-Fox.pdf">The Fox</a></big>
+                                                    
+                        <p style="color:#bdbdbd"> Action And Adventures | English </p>
+                        
+                        <div>
+                     <p class="para"> The Romans’ path of destruction jeopardizes a Caledonian clan unless they are able to strike a bargain with the Gods, which ultimately means a human sacrifice. Jahna is a member of this first century tribe. She has the power to merge minds, which she chooses to do with a twenty-first century woman, Aine MacRae and her contemporary, a young man Lovern, to whom she was hand-fasted in her time and of whom she shared a child, in order to save her people. In the name of the gods, Lovern was killed. Druids place his body in the sacred Black Lake, but through a visit from his ghost, Jahna sends their child away thus securing their bloodline. In the midst of madness, Jahna lives just long enough to reveal to Aine, her grief. 
+                      <p class="para">Two thousand years later, in the year 2005, Aine is hoping to reestablish her career as an archaeologist and assists in the excavation in the Highlands of Scotland of a first century Caledonian chieftain’s tomb with fellow archaeologist, Marc Hunt. As the fates align, Jahna, guides Aine to one bronze bowl, then another, and when she is led by a ghost, Aine uncovers a two thousand year old man encased in a bog. As the circle goes unbroken, a heart’s chains are loosened and it is understood that Aine and Marc are able to rediscover their past love. 
+                      <br/> </p>
+
+                      <a href="books/The-Fox.pdf" style="color: #00ccff" class="para"> To Read more</a>
+                     
+
+                     
+                                              
+                      </div>
+                                                    
+                    </div>
+                </div>
+
+
+
+</section>
+</div>
+
+
+</section>
+</div>
+  <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/creative.min.js"></script>
+
+
+ <section>
+
+ <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                          <h5 style="padding-top: 15px; padding-bottom: 10px; color: #00ccff">THE BOOK CAFE</h5>
+                            <p style="color:#fdebe7; text-align: justify;">
+                               This is a special website dedicated to all those who have an incredible passion for reading. You will find an array of books categorised for every age group and for every genres. Its the perfect spot where you will be able to relish and cherish every minute of your daily reading quota. Also, there is specific corner designed where you will find motivational and inspiring quotes which will boost your state of mind and help you to enjoy your day.
+                            </p>
+                        </div>
+                  
+
+                    <div class="col-md-4">                        
+                            <h5 style="padding-top: 15px; padding-bottom: 10px; color: #00ccff; text-align: center;">Useful links</h5>
+
+                            <div class="list-group">
+                              <a style="background-color: transparent; border-bottom: 0.5px solid white; border-top: none; border-left:none; border-right: none" class="list-group-item" href="#"><i style="color:#00ccff" class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp; <span style="color:white">Home</span></a>
+                              <a style="background-color: transparent; border-bottom: 0.5px solid white; border-top: none; border-left:none; border-right: none" class="list-group-item" href="#"><i style="color:#00ccff" class="fa fa-pencil fa-fw" aria-hidden="true"></i>&nbsp; <span style="color:white">Writer's Corner</span></a>
+                              <a style="background-color: transparent; border-bottom: 0.5px solid white; border-top: none; border-left:none; border-right: none" class="list-group-item" href="#"><i style="color:#00ccff" class="fa fa-id-card-o fa-fw" aria-hidden="true"></i>&nbsp; <span style="color:white">Register</span></a>
+                              <a style="background-color: transparent; border-bottom: 0.5px solid white; border-top: none; border-left:none; border-right: none" class="list-group-item" href="#"><i style="color:#00ccff" class="fa fa-envelope-open fa-fw" aria-hidden="true"></i>&nbsp; <span style="color:white">Contact us</span></a>
+                              <a style="background-color: transparent; border-bottom: 0.5px solid white; border-top: none; border-left:none; border-right: none" class="list-group-item" href="#"><i style="color:#00ccff" class="fa fa-user fa-fw" aria-hidden="true"></i>&nbsp; <span style="color:white">About us</span></a>
+                              <br>
+                        </div>
+                  
+                                  
+                      
+                        </div>
+               
+        
+
+                    <div class="col-md-4">                        
+                            <h5 style="padding-top: 15px; padding-bottom: 10px; color: #00ccff; text-align:center;">Contact Information</h5>
+                            <p><i style="color: #00ccff" class="fa fa-map-marker fa-lg"></i><span style="color:white">&nbsp;&nbsp;Address:</span></p>
+                            <p style="color:grey">University of Mauritius, Reduit</p>
+                            <p><i style="color: #00ccff" class="fa fa-phone fa-lg"></i><span style="color:white">&nbsp;&nbsp;Phone:</span></p>
+                            <p style="color:grey">+230 626 3301</p>
+                            <p><i style="color: #00ccff" class="fa fa-envelope-o fa-lg"></i><span style="color:white">&nbsp;&nbsp;Email:</span></p>
+                            <p style="color:grey">thebookcafe@gmail.com</p>
+
+
+                             
+                 
+                            </div>
+
+
+
+                    <div class="col-md-12 text-center" style="background-color:#2d3039; height: 25px">
+                    <p style="color:grey; padding-top:2px; font-size: 12px">&copy The Book Café| Copyrights 2017</p>
+                    </div>
+                        </div>
+                    </div>
+           </footer>
+
+             
+</section>
+ 
+
+
+</body>
+</html>
+
+

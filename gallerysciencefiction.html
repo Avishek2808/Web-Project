@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Spectral+SC" rel="stylesheet">
+    <style>
+
+  body h1
+  {
+      font-family: 'Spectral SC', serif;
+    }
+
+body h5
+  {
+      font-family: 'Spectral SC', serif;
+    }
+
+.listView .item {
+    margin: 10px 0;
+    padding: 10px 0;
+    border-bottom: 2px solid #e5e5e5;
+    clear: both;
+}
+
+.listView .item-icon {
+    display: table-cell;
+    width: 126px;
+    padding: 0 0 10px;
+    vertical-align: top;
+}
+
+.listView .item-content {
+    display: table-cell;
+    padding: 0 0 10px 20px;
+    vertical-align: top;
+    width: 100%;
+}
+
+.listView .item-author
+ {
+    display: inline-block;
+    padding: 0 0 2px;
+}
+
+.listView .item-author, .listView .item-description
+ {
+    font-size: 13px;
+}
+
+a, a:visited 
+{
+    color: #005CA5;
+    text-decoration: none;
+}
+
+.listView big.item-title
+ {
+    display: block;
+    font-weight: bold;
+}
+
+.listView h3, .listView big.item-title
+ {
+    font-size: 16px;
+    line-height: 1.2em;
+}
+
+.listView .item-details {
+    margin: 6px 0 0;
+}
+
+ul, ol {
+    list-style-type: none;
+}
+
+html, body, article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, div, h1, h2, h3, h4, h5, h6, p, blockquote, dl, dt, dd, ol, ul, li, span, big, small, pre, a, acronym, big, em, img, strong, table, caption, tbody, tfoot, thead, tr, th, td, form, fieldset, label, legend, input, textarea, button {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    border: 0;
+    outline: 0;
+    background: transparent;
+}
+
+user agent stylesheet
+ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+
+.listView .item-details-views {
+    padding: 0 0 0 20px;
+}
+
+.listView .item-details-views, .listView .item-details-favorites, .listView .item-details-comments, .listView .item-details-saleOption {
+    position: relative;
+    cursor: default;
+}
+
+.listView .item-details-favorites {
+    padding: 0 0 0 15px;
+}
+
+.listView .item-details-views, .listView .item-details-favorites, .listView .item-details-comments, .listView .item-details-saleOption {
+    position: relative;
+    cursor: default;
+    }
+
+    .listView .item-description {
+    margin: 14px 0 0;
+    word-wrap: break-word;
+}
+
+.listView .item-author, .listView .item-description {
+    font-size: 13px;
+}
+
+
+
+
+
+
+.para
+{
+  text-align: justify;
+  font-size: 14px;
+  color: white;
+}
+
+
+.backc
+{
+  background-color: #353535;
+
+}
+
+.auth
+{
+  color: #F05F40;
+}
+</style>
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>TBH - Romance Gallery</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/creative.min.css" rel="stylesheet">
+    <link href="css/creative.css" rel="stylesheet">
+    <link href="css/book.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/jpg" href="img/icon/logo1.png">
+
+  </head>
+
+  <body class="background"><!--Class:to implement the background image via css-->
+ 
+
+    <!-- Navigation -->
+   <section>
+    <!-- Navigation -->
+    <div class=" paint">
+    <nav class="navbar navbar-expand-lg navbar-light" id="mainNav" style="background-color: #505257">
+      <div class="container">
+        
+        <a class="navbar-brand js-scroll-trigger" href="index.html"><img src="img/logofinal3.png" width="75%"></a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="index.html#index">Home</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="gallery.html#Books">Books</a>
+            </li>
+            
+
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="registration.html#Registration Form">Register</a>
+            </li>
+             <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="contact.html#Contact">Contact us</a>
+            </li>
+
+            </li>
+             <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="us.html#us">About us</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="login.html#login">Login</a>
+            </li>
+
+
+          </ul>
+        
+        </div>
+      </div>
+    </nav>
+    </div>
+</section>
+
+
+
+<body>
+  <section class="slideup">
+
+  <h1 style="text-align: center; color: #00ccff">Science Fiction Books</h1>
+
+
+  <p><center><img src="img/bookwp/science.jpg" alt="Science Fiction Banner" width="1035" height="245"></center></p>
+</section>
+
+  
+<section id="booksList" class="listView books slideup2">
+ <div class="item backc">
+  
+                    <div class="item-icon">
+                        <a href="books/NeptuneCrossing.pdf" target="_blank"><img src="img/bookwp/neptune.jpg" width="170" alt="Neptune Crossing"/></a>
+                    </div>
+                    <div class="item-content">
+                        <a style="color: #00ccff" class="item-author auth" href="books/NeptuneCrossing.pdf" target="_blank"/>Jeffrey A. Carver</a>
+                        <big class="item-title"><a style="color: #00ccff" class="word-break" href="books/NeptuneCrossing.pdf" target="_blank"/>Neptune Crossing</a></big>
+                                                    
+                        <p style="color:#bdbdbd"> Science Fiction | English </p>
+                        
+                        <div>
+                     <p class="para"> When John Bandicut sets out across the surface of Triton, he’s hardly ready for the storm of chaos that’s about to blow through his life. The alien quarx that soon inhabits his mind is humanity’s first contact with an alien life—a contact Bandicut can reveal to no one. The quarx, part of an ancient galactic civilization that manipulates chaos theory to predict catastrophic events, seeks to prevent a cometary collision that could destroy the Earth. But it must have help. 
+                      <p class="para">If Bandicut chooses to trust the quarx, he must break all the rules—indeed, sacrifice his life as he knows it—to prevent humanity’s greatest cataclysm. Leaving friends and lover behind, hurtling across the solar system in a stolen spaceship, Bandicut can only pray that his actions will save the Earth. Even if he doesn’t live to see it again. From the Nebula-nominated author of Eternity’s End.
+                      <br/> </p>
+
+                      <a href="books/NeptuneCrossing.pdf" style="color: #F05F40" class="para" target="_blank"> To Read more</a>
+                     
+
+                     
+                                              
+                      </div>
+                                                    
+                    </div>
+                </div>
+
+   
+         </div>
+      </div>
+
+
+<div class="item backc">
+                    <div class="item-icon">
+                        <a href="books/Phoenix-Conspiracy.pdf" target="_blank"><img src="img/bookwp/phoenix2.jpg" width="170" alt="The Phoenix Conspiracy" /></a>
+                    </div>
+                    <div class="item-content">
+                        <a style="color: #00ccff" class="item-author" data-bxuid="Richard L. Sanders" href="books/Phoenix-Conspiracy.pdf" target="_blank">Richard L. Sanders</a>
+                        <big class="item-title"><a style="color: #00ccff" class="word-break" href="books/Phoenix-Conspiracy.pdf" target="_blank">The Phoenix Conspiracy</a></big>
+                                                    
+                        <p style="color:#bdbdbd"> Science Fiction | English </p>
+                        
+                        <div>
+                     <p class="para">On the surface, the galaxy seems peaceful. Humankind prospers from the Capital World to the far reaches of The Corridor. But to those who can see the signs, it's clear something is wrong. Long, dark fingers are pulling strings inside the military, making clandestine deals with enemy states, and fulfilling some dark design.
+                      <p class="para">Calvin is an intelligence agent working for the Imperial government. He's young, his methods are unorthodox, but he gets results. So when a former military hero steals a warship and goes rogue--threatening to start a war, Calvin is sent to eliminate him.</p>
+                      <p class="para">But as he chases his prey across the stars, he realizes they are both pawns in a shadowy chess game that shakes kingdoms, divides empires, and threatens civilization everywhere. And if he is to uncover the mystery and expose the conspiracy he must confront--and embrace--the darkest elements of the galaxy and throw himself, his career, and everyone he loves into the line of fire. </p>                        
+                      
+                       <br/> </p>
+
+                      <a href="books/Phoenix-Conspiracy.pdf" style="color: #F05F40" class="para" target="_blank"> To Read more</a>
+                     
+
+                     
+                      </div>
+                                                    
+                    </div>
+                </div>
+
+
+
+ <div class="item backc">
+                    <div class="item-icon">
+                        <a href="books/HiddenRealm.pdf" target="_blank"><img src="img/bookwp/realm.jpg" width="170" alt="The Hidden Realm" /></a>
+                    </div>
+                    <div class="item-content">
+                        <a  style="color: #00ccff" class="item-author" data-bxuid="Adrian Kyte" href="books/HiddenRealm.pdf" target="_blank">Adrian Kyte</a>
+                        <big class="item-title"><a style="color: #00ccff" class="word-break" href="books/HiddenRealm.pdf" target="_blank">The Hidden Realm</a></big>
+                                                    
+                        <p style="color:#bdbdbd"> Science Fiction | English </p>
+                        
+                        <div>
+                     <p class="para">Gerrid Lytum: creator of TIAR - the ultimate in Artificial Reality, he believes will revolutionize people's lives. Unfortunately, Gerrid's work has been closely observed, and it seems his fate is in the hands of those who wield the true power in this world. Will he become just another player in their plan for a New World order?... With the Nine in charge freedom will become merely an illusion. Can anyone stop them?                       
+                      <br/> </p>
+
+                      <a href="books/HiddenRealm.pdf" style="color: #F05F40" class="para" target="_blank"> To Read more</a>
+                     
+
+                     
+                      </div>
+                                                    
+                    </div>
+                </div>
+
+
+<div class="item backc">
+                    <div class="item-icon">
+                        <a href="books/Behemoth.pdf" target="_blank"><img src="img/bookwp/behemoth.jpg" width="170" alt="Behemoth" /></a>
+                    </div>
+                    <div class="item-content">
+                        <a style="color: #00ccff" class="item-author" data-bxuid="Peter Watts" href="books/Behemoth.pdf" target="_blank">Peter Watts</a>
+                        <big class="item-title"><a style="color: #00ccff" class="word-break" href="books/Behemoth.pdf" target="_blank">Behemoth</a></big>
+                                                    
+                        <p style="color:#bdbdbd"> Science Fiction | English </p>
+                        
+                        <div>
+                     <p class="para"> Starfish lit the fuse. Maelstrom was the explosion. But five years into the aftermath, things aren't quite so simple as they once seemed...
+
+                      Lenie Clarke-rifter, avenger, amphibious deep-sea cyborg-has destroyed the world. Once exploited for her psychological addiction to dangerous environments, she emerged in the wake of a nuclear blast to serve up vendetta from the ocean floor. The horror she unleashed-an ancient, apocalyptic microbe called ßehemoth- has been free in the world for half a decade now, devouring the biosphere from the bottom up. North America lies in ruins beneath the thumb of an omnipotent psychopath. Digital monsters have taken Clarke's name, wreaking havoc throughout the decimated remnants of something that was once called Internet. Governments have fallen across the globe; warlords and suicide cults rise from the ashes, pledging fealty to the Meltdown Madonna. All because five years ago, Lenie Clarke had a score to settle.
+                      <p class="para">But she has learned something in the meantime: she destroyed the world for a fallacy.
+
+                      Now, cowering at the bottom of the Atlantic Ocean, rifters and the technoindustrial "corpses" who created them hide from a world in its death throes. But they cannot hide forever: something is tracking them, down amongst the lightless cliffs and trenches of the Midatlantic Ridge. The consequences of past acts reach inexorably towards the very bottom of the world, and Lenie Clarke must finally confront the mess she made.
+                      </p>
+                      <p class="para"> Redemption doesn't come easy with the blood of a world on your hands. But even after five years in purgatory, Lenie Clarke is still Lenie Clarke. There will be consequences for anyone who gets in her way-and worse ones, perhaps, if she succeeds. . . .</p>                        
+                      <br/> </p>
+
+                      <a href="books/Behemoth.pdf" style="color: #F05F40" class="para" target="_blank"> To Read more</a>
+                     
+
+                     
+
+                      </div>
+                                                    
+                    </div>
+                </div>
+
+<div class="item backc">
+                    <div class="item-icon">
+                        <a href="books/SecondCovenant.pdf" target="_blank"><img src="img/bookwp/covenant.jpg" width="170" alt="Second Covenant"/></a>
+                    </div>
+                    <div class="item-content">
+                        <a style="color: #00ccff" class="item-author" data-bxuid="Elissa Malcohn" href="books/SecondCovenant.pdf" target="_blank">Elissa Malcohn</a>
+                        <big class="item-title"><a  style="color: #00ccff" class="word-break" href="books/SecondCovenant.pdf" target="_blank">Second Covenant</a></big>
+                                                    
+                        <p style="color:#bdbdbd"> Science Fiction | English </p>
+                        
+                        <div>
+                     <p class="para"> Bless struggles to govern Crossroads, now that her father HigherBrook is gone. TelZodo chronicles the Masari's decline as Yata gain control of the region. Caught up in an unpopular argument for increased predation, he doesn't know what to believe in any more. 
+                      <p class="para">Abri, Zai's eldest son and a Preserver, must reconcile his sworn oath to hunt Masari with his growing worship of them. He finally understands the true meaning behind his people's ancient myth of the man who had killed his own kind to feed the predators. </p>
+                      
+                                            
+                      <br/> 
+
+                      <a href="books/SecondCovenant.pdf" style="color: #F05F40" class="para" target="_blank"> To Read more</a>
+                     
+
+                     
+
+
+                      </div>
+                                                    
+                    </div>
+                </div>
+
+  <div class="item backc">
+                    <div class="item-icon">
+                        <a href="books/Entropy-Imagination.pdf" target="_blank"><img src="img/bookwp/entropy.jpg" width="170" alt="Entropy of Imagination" /></a>
+                    </div>
+                    <div class="item-content">
+                        <a style="color: #00ccff" class="item-author" data-bxuid=" Ryan Somma " href="books/Entropy-Imagination.pdf" target="_blank"> Ryan Somma </a>
+                        <big class="item-title"><a style="color: #00ccff" class="word-break" href="books/Entropy-Imagination.pdf" target="_blank">Entropy of Imagination</a></big>
+                                                    
+                        <p style="color:#bdbdbd"> Science Fiction | English </p>
+                        
+                        <div>
+                     <p class="para"> Thousands of years ago, before he was trapped on an isolated computer system, Flatline was programmed to conquer the world. Today he’s escaped back to the World Wide Web, where he hopes to find his way back to the real world. Except the World Wide Web has forgotten there ever was a real world. 
+                      <p class="para">The inhabitants of this future Web reside in a closed system, where all possible experiences will soon be exhausted. The Web is winding down, falling into stasis. Here, Flatline is a brief infusion of novelty, bringing chaos to the system.</p>                        
+                      <br/> </p>
+
+                      <a href="books/Entropy-Imagination.pdf" style="color: #F05F40" class="para" target="_blank"> To Read more</a>
+                     
+
+                     
+
+                      </div>
+                                                    
+                    </div>
+                </div>
+
+
+
+</section>
+</div>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/creative.min.js"></script>
+
+
+ <section>
+
+ <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                          <h5 style="padding-top: 15px; padding-bottom: 10px; color: #00ccff">THE BOOK CAFE</h5>
+                            <p style="color:#fdebe7; text-align: justify;">
+                               This is a special website dedicated to all those who have an incredible passion for reading. You will find an array of books categorised for every age group and for every genres. Its the perfect spot where you will be able to relish and cherish every minute of your daily reading quota. Also, there is specific corner designed where you will find motivational and inspiring quotes which will boost your state of mind and help you to enjoy your day.
+                            </p>
+                        </div>
+                  
+
+                    <div class="col-md-4">                        
+                            <h5 style="padding-top: 15px; padding-bottom: 10px; color: #00ccff; text-align: center;">Useful links</h5>
+
+                            <div class="list-group">
+                              <a style="background-color: transparent; border-bottom: 0.5px solid white; border-top: none; border-left:none; border-right: none" class="list-group-item" href="#"><i style="color:#00ccff" class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp; <span style="color:white">Home</span></a>
+                              <a style="background-color: transparent; border-bottom: 0.5px solid white; border-top: none; border-left:none; border-right: none" class="list-group-item" href="#"><i style="color:#00ccff" class="fa fa-pencil fa-fw" aria-hidden="true"></i>&nbsp; <span style="color:white">Writer's Corner</span></a>
+                              <a style="background-color: transparent; border-bottom: 0.5px solid white; border-top: none; border-left:none; border-right: none" class="list-group-item" href="#"><i style="color:#00ccff" class="fa fa-id-card-o fa-fw" aria-hidden="true"></i>&nbsp; <span style="color:white">Register</span></a>
+                              <a style="background-color: transparent; border-bottom: 0.5px solid white; border-top: none; border-left:none; border-right: none" class="list-group-item" href="#"><i style="color:#00ccff" class="fa fa-envelope-open fa-fw" aria-hidden="true"></i>&nbsp; <span style="color:white">Contact us</span></a>
+                              <a style="background-color: transparent; border-bottom: 0.5px solid white; border-top: none; border-left:none; border-right: none" class="list-group-item" href="#"><i style="color:#00ccff" class="fa fa-user fa-fw" aria-hidden="true"></i>&nbsp; <span style="color:white">About us</span></a>
+                              <br>
+                        </div>
+                  
+                                  
+                      
+                        </div>
+               
+        
+
+                    <div class="col-md-4">                        
+                            <h5 style="padding-top: 15px; padding-bottom: 10px; color: #00ccff; text-align:center;">Contact Information</h5>
+                            <p><i style="color: #00ccff" class="fa fa-map-marker fa-lg"></i><span style="color:white">&nbsp;&nbsp;Address:</span></p>
+                            <p style="color:grey">University of Mauritius, Reduit</p>
+                            <p><i style="color: #00ccff" class="fa fa-phone fa-lg"></i><span style="color:white">&nbsp;&nbsp;Phone:</span></p>
+                            <p style="color:grey">+230 626 3301</p>
+                            <p><i style="color: #00ccff" class="fa fa-envelope-o fa-lg"></i><span style="color:white">&nbsp;&nbsp;Email:</span></p>
+                            <p style="color:grey">thebookcafe@gmail.com</p>
+
+
+                             
+                 
+                            </div>
+
+
+
+                    <div class="col-md-12 text-center" style="background-color:#2d3039; height: 25px">
+                    <p style="color:grey; padding-top:2px; font-size: 12px">&copy The Book Café| Copyrights 2017</p>
+                    </div>
+                        </div>
+                    </div>
+           </footer>
+
+             
+</section>
+ 
+
+
+</body>
+</html>

@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Spectral+SC" rel="stylesheet">
+    <style>
+
+  body h1
+  {
+      font-family: 'Spectral SC', serif;
+    }
+
+body h5
+  {
+      font-family: 'Spectral SC', serif;
+    }
+
+.listView .item {
+    margin: 10px 0;
+    padding: 10px 0;
+    border-bottom: 2px solid #e5e5e5;
+    clear: both;
+}
+
+.listView .item-icon {
+    display: table-cell;
+    width: 126px;
+    padding: 0 0 10px;
+    vertical-align: top;
+}
+
+.listView .item-content {
+    display: table-cell;
+    padding: 0 0 10px 20px;
+    vertical-align: top;
+    width: 100%;
+}
+
+.listView .item-author
+ {
+    display: inline-block;
+    padding: 0 0 2px;
+}
+
+.listView .item-author, .listView .item-description
+ {
+    font-size: 13px;
+}
+
+a, a:visited 
+{
+    color: #005CA5;
+    text-decoration: none;
+}
+
+.listView big.item-title
+ {
+    display: block;
+    font-weight: bold;
+}
+
+.listView h3, .listView big.item-title
+ {
+    font-size: 16px;
+    line-height: 1.2em;
+}
+
+.listView .item-details {
+    margin: 6px 0 0;
+}
+
+ul, ol {
+    list-style-type: none;
+}
+
+html, body, article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, div, h1, h2, h3, h4, h5, h6, p, blockquote, dl, dt, dd, ol, ul, li, span, big, small, pre, a, acronym, big, em, img, strong, table, caption, tbody, tfoot, thead, tr, th, td, form, fieldset, label, legend, input, textarea, button {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    border: 0;
+    outline: 0;
+    background: transparent;
+}
+
+user agent stylesheet
+ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+
+.listView .item-details-views {
+    padding: 0 0 0 20px;
+}
+
+.listView .item-details-views, .listView .item-details-favorites, .listView .item-details-comments, .listView .item-details-saleOption {
+    position: relative;
+    cursor: default;
+}
+
+.listView .item-details-favorites {
+    padding: 0 0 0 15px;
+}
+
+.listView .item-details-views, .listView .item-details-favorites, .listView .item-details-comments, .listView .item-details-saleOption {
+    position: relative;
+    cursor: default;
+    }
+
+    .listView .item-description {
+    margin: 14px 0 0;
+    word-wrap: break-word;
+}
+
+.listView .item-author, .listView .item-description {
+    font-size: 13px;
+}
+
+
+
+
+
+
+.para
+{
+  text-align: justify;
+  font-size: 14px;
+  color: white;
+}
+
+
+.backc
+{
+  background-color: #353535;
+
+}
+
+.auth
+{
+  color: #F05F40;
+}
+</style>
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>TBH - Romance Gallery</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/creative.min.css" rel="stylesheet">
+    <link href="css/creative.css" rel="stylesheet">
+
+    <link href="css/book.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/jpg" href="img/icon/logo1.png">
+
+  </head>
+
+  <body class="background"><!--Class:to implement the background image via css-->
+ 
+
+    <!-- Navigation -->
+<section>
+    <!-- Navigation -->
+    <div class=" paint">
+    <nav class="navbar navbar-expand-lg navbar-light" id="mainNav" style="background-color: #505257">
+      <div class="container">
+        
+        <a class="navbar-brand js-scroll-trigger" href="index.html"><img src="img/logofinal3.png" width="75%"></a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="index.html#index">Home</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="gallery.html#Books">Books</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="registration.html#Registration Form">Register</a>
+            </li>
+             <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="contact.html#Contact">Contact us</a>
+            </li>
+
+            </li>
+             <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="us.html#us">About us</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="login.html#login">Login</a>
+            </li>
+
+
+          </ul>
+        
+        </div>
+      </div>
+    </nav>
+    </div>
+</section>
+
+  
+
+    
+
+
+
+<body>
+  <section class="slideup">
+
+  <h1 style="text-align: center; color: #00ccff">Horror Books</h1>
+
+
+  <p><center><img src="img/bookwp/horror2.jpg" alt="RHorror Banner" width="1035" height="245"></center></p>
+</section>
+
+  
+<section id="booksList" class="listView books slideup2">
+ <div class="item backc">
+  
+                    <div class="item-icon">
+                        <a href="books/BloodThatBonds.pdf"><img src="img/bookwp/blood.jpg" width="170" alt="The Blood That Bonds" target="_blank"/></a>
+                    </div>
+                    <div class="item-content">
+                        <a style="color: #00ccff" class="item-author auth" href="books/BloodThatBonds.pdf" target="_blank"/>Christopher Buecheler </a>
+                        <big class="item-title"><a style="color: #00ccff" class="word-break" href="books/BloodThatBonds.pdf" target="_blank"/>The Blood That Bonds</a></big>
+                                                    
+                        <p style="color:#bdbdbd"> Horror | English </p>
+                        
+                        <div>
+                     <p class="para"> Two is trapped: hooked on heroin, held as property, forced to sell her body to feed the addiction. Time brings her ever closer to what seems an inevitable death and Two waits, uncaring, longing only for the next fix.</p>
+
+                      <p>That’s when Theroen arrives, beckoning to his Ferrari and grinning his inscrutable grin. He is handsome. Confident. Eager to help lift her out of the life that’s grinding her down.</p>
+
+                      <p class="para">The only problem? Theroen is a vampire.</p>
+
+                     <p class="para"> His blood can cure her addiction, grant her powers she has never had, change her forever into something greater than she was. But when he sinks his teeth into her neck, Theroen also thrusts Two into a world of danger, violence, madness and despair. The powerful, twisted elder Abraham will use her arrival to shatter the uneasy peace that exists in his mansion, bringing an end to the dark game he has been playing for centuries.
+                      <br/> </p>
+
+                      <a href="books/BloodThatBonds.pdf" style="color: #00ccff" class="para" target="_blank"> To Read more</a>
+                     
+
+                     
+                                              
+                      </div>
+                                                    
+                    </div>
+                </div>
+
+   
+         </div>
+      </div>
+
+
+<div class="item backc">
+                    <div class="item-icon">
+                        <a href="books/ZombieNights.pdf" target="_blank"><img src="img/bookwp/zombie.jpg" width="170" alt="Zombie Nights" /></a>
+                    </div>
+                    <div class="item-content">
+                        <a style="color: #00ccff" class="item-author" data-bxuid="Tom Lichtenberg" href="books/ZombieNights.pdf" target="_blank">Tom Lichtenberg</a>
+                        <big class="item-title"><a style="color: #00ccff" class="word-break" href="books/ZombieNights.pdf" target="_blank">Zombie Nights</a></big>
+                                                    
+                        <p style="color:#bdbdbd"> Horror | English </p>
+                        
+                        <div>
+                     <p class="para"> Being a zombie, not so easy. That could have been Dave Connor's six word memoir. "At first he couldn't remember how he'd ended up in that shallow grave; he just knew it was hell to claw his way out, and that the taste of its dirt would remain in his mouth for the rest of his time on this earth" ... Expect the unexpected in this existential resurrection thriller.
+                      <br/> </p>
+
+                      <a href="books/ZombieNights.pdf" style="color: #00ccff" class="para" target="_blank"> To Read more</a>
+                     
+
+                     
+                                              
+                      </div>
+                                                    
+                    </div>
+                </div>
+
+
+
+ <div class="item backc">
+                    <div class="item-icon">
+                        <a href="books/Haunted Way.pdf" target="_blank"><img src="img/bookwp/haunted.jpg" width="170" alt="The Haunted Way" /></a>
+                    </div>
+                    <div class="item-content">
+                        <a style="color: #00ccff" class="item-author" data-bxuid="Neil Wesson" href="books/Haunted Way.pdf" target="_blank">Neil Wesson</a>
+                        <big class="item-title"><a style="color: #00ccff" class="word-break" href="books/Haunted Way.pdf" target="_blank">The Haunted Way</a></big>
+                                                    
+                        <p style="color:#bdbdbd"> Horror | English </p>
+                        
+                        <div>
+                     <p class="para"> When Lee, Maddie and Sarah meet in the pub to plan this years charity walk; none of them could possibly know that the route they picked would cause a series of strange events and encounters to take place.
+                      Passing through many villages while on the way, Maddie recounts supernatural tales in regard to each location, none of the party though could be aware that they themselves were becoming part of a bigger tale…</p>
+                      <p class="para">At the end of the first days walking all three experience a strange encounter, is it heat and Maddies stories dwelling on their minds, or something much more sinister..?
+                      This book is much more then a novel, the walk actually exists and can be followed by the use of the maps included within the book.  
+                       
+                        </p>
+
+                      <a href="books/Haunted Way.pdf" style="color: #00ccff" class="para" target="_blank"> To Read more</a>
+                     
+
+                     <hr>                     
+                      </div>
+                                                    
+                    </div>
+                </div>
+
+
+<div class="item backc">
+                    <div class="item-icon">
+                        <a href="books/scarecrow.pdf" target="_blank"><img src="img/bookwp/scarecrow.jpg" width="170" alt="Scare Crow" /></a>
+                    </div>
+                    <div class="item-content">
+                        <a style="color: #00ccff" class="item-author" data-bxuid="Darren G. Burton" href="books/scarecrow.pdf" target="_blank">Darren G. Burton</a>
+                        <big class="item-title"><a style="color: #00ccff" class="word-break" href="books/scarecrow.pdf" target="_blank">Scare Crow</a></big>
+                                                    
+                        <p style="color:#bdbdbd"> Horror | English </p>
+                        
+                        <div>
+                     <p class="para">On a small island resort in the middle of the Bahamas, three college graduates dive for lost Spanish treasure. In their efforts to find the gold, the three men open an underwater cave that has been sealed shut for more than two decades. In the cave lurks a creature of unspeakable evil. One by one, the resort guests start to disappear. Headless corpses wash up on the beaches. Kurt, Matt and Pete must find a way to stop the bloody rampage before they all die. But only one man knows the secret of the SCARECROW. 
+                      
+                      <br/> </p>
+
+                      <a href="books/scarecrow.pdf" style="color: #00ccff" class="para" target="_blank"> To Read more</a>
+                     
+
+                     
+                                            
+                      </div>
+                                                    
+                    </div>
+                </div>
+
+<div class="item backc">
+                    <div class="item-icon">
+                        <a href="books/HiddenHighway.pdf" target="_blank"><img src="img/bookwp/hidden.jpg" width="170" alt="Hidden Highway" /></a>
+                    </div>
+                    <div class="item-content">
+                        <a style="color: #00ccff" class="item-author" data-bxuid="Tom Lichtenberg" href="books/HiddenHighway.pdf" target="_blank">Tom Lichtenberg</a>
+                        <big class="item-title"><a style="color: #00ccff" class="word-break" href="books/HiddenHighway.pdf" target="_blank">Hidden Highway</a></big>
+                                                    
+                        <p style="color:#bdbdbd"> Horror | English </p>
+                        
+                        <div>
+                     <p class="para"> Kait Nolan's Mirus series is set in a paranormal world unlike any you've visited before—inventive new mythology full of fast-paced action, dark dangers, sparkling magic, and sizzling, undeniable attraction.</p>
+                      <p class="para"> Isla's ability as a Seer has made her a life-long captive of a paranormal crime lord. Fae assassin, Ransom, offers her a chance at escape, but when she touches his hand she sees only blood, horror, apocalypse. What reason can Ransom have for wanting to rescue her, and can she possibly trust a man who deals in death? 
+                      </p>
+                      
+                      <br/> </p>
+
+                      <a href="books/HiddenHighway.pdf" style="color: #00ccff" class="para" target="_blank"> To Read more</a>
+                     
+
+                                        
+                      </div>
+                                                    
+                    </div>
+                </div>
+
+  <div class="item backc">
+                    <div class="item-icon">
+                        <a href="books/Forever15.pdf" target="_blank"><img src="img/bookwp/forever.jpg" width="170" alt="Forever Fifteen: A Novel" /></a>
+                    </div>
+                    <div class="item-content">
+                        <a style="color: #00ccff" class="item-author" data-bxuid="Kimberly Steele" href="books/Forever15.pdf" target="_blank">Kimberly Steele</a>
+                        <big class="item-title"><a style="color: #00ccff" class="word-break" href="books/Forever15.pdf" target="_blank">Forever Fifteen: A Novel</a></big>
+                                                    
+                        <p style="color:#bdbdbd"> Horror | English </p>
+                        
+                        <div>
+                     <p class="para"> Lucy Albert is not your ordinary maladjusted suburban adolescent. Born into the era of the Black Plague in medieval Italy, Lucy is chosen as a mate by the sinister vampire Sebastianus against her will. Struggling to survive in a modern world she cannot identify with, Lucy isn't looking for attention. 
+                      
+                      <p class="para">Welcome to Forever Fifteen, where a lonely girl seeks refuge in a world awash in everyday brutality, a world where only blood and death can sate her hunger. Journey into Lucy's past as you experience the terror of the Black Death and the harsh reality of womanhood in the Middle Ages. Enter Forever Fifteen, the fast-paced thrill ride that is redefining vampire horror.
+                      <br/> </p>
+
+                      <a href="books/Forever15.pdf" style="color: #00ccff" class="para" target="_blank"> To Read more</a>
+                     
+
+                     
+                                              
+                      </div>
+                                                    
+                    </div>
+                </div>
+
+
+
+</section>
+</div>
+
+
+</section>
+  <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/creative.min.js"></script>
+
+
+ <section>
+
+ <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                          <h5 style="padding-top: 15px; padding-bottom: 10px; color: #00ccff">THE BOOK CAFE</h5>
+                            <p style="color:#fdebe7; text-align: justify;">
+                               This is a special website dedicated to all those who have an incredible passion for reading. You will find an array of books categorised for every age group and for every genres. Its the perfect spot where you will be able to relish and cherish every minute of your daily reading quota. Also, there is specific corner designed where you will find motivational and inspiring quotes which will boost your state of mind and help you to enjoy your day.
+                            </p>
+                        </div>
+                  
+
+                    <div class="col-md-4">                        
+                            <h5 style="padding-top: 15px; padding-bottom: 10px; color: #00ccff; text-align: center;">Useful links</h5>
+
+                            <div class="list-group">
+                              <a style="background-color: transparent; border-bottom: 0.5px solid white; border-top: none; border-left:none; border-right: none" class="list-group-item" href="#"><i style="color:#00ccff" class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp; <span style="color:white">Home</span></a>
+                              <a style="background-color: transparent; border-bottom: 0.5px solid white; border-top: none; border-left:none; border-right: none" class="list-group-item" href="#"><i style="color:#00ccff" class="fa fa-pencil fa-fw" aria-hidden="true"></i>&nbsp; <span style="color:white">Writer's Corner</span></a>
+                              <a style="background-color: transparent; border-bottom: 0.5px solid white; border-top: none; border-left:none; border-right: none" class="list-group-item" href="#"><i style="color:#00ccff" class="fa fa-id-card-o fa-fw" aria-hidden="true"></i>&nbsp; <span style="color:white">Register</span></a>
+                              <a style="background-color: transparent; border-bottom: 0.5px solid white; border-top: none; border-left:none; border-right: none" class="list-group-item" href="#"><i style="color:#00ccff" class="fa fa-envelope-open fa-fw" aria-hidden="true"></i>&nbsp; <span style="color:white">Contact us</span></a>
+                              <a style="background-color: transparent; border-bottom: 0.5px solid white; border-top: none; border-left:none; border-right: none" class="list-group-item" href="#"><i style="color:#00ccff" class="fa fa-user fa-fw" aria-hidden="true"></i>&nbsp; <span style="color:white">About us</span></a>
+                              <br>
+                        </div>
+                  
+                                  
+                      
+                        </div>
+               
+        
+
+                    <div class="col-md-4">                        
+                            <h5 style="padding-top: 15px; padding-bottom: 10px; color: #00ccff; text-align:center;">Contact Information</h5>
+                            <p><i style="color: #00ccff" class="fa fa-map-marker fa-lg"></i><span style="color:white">&nbsp;&nbsp;Address:</span></p>
+                            <p style="color:grey">University of Mauritius, Reduit</p>
+                            <p><i style="color: #00ccff" class="fa fa-phone fa-lg"></i><span style="color:white">&nbsp;&nbsp;Phone:</span></p>
+                            <p style="color:grey">+230 626 3301</p>
+                            <p><i style="color: #00ccff" class="fa fa-envelope-o fa-lg"></i><span style="color:white">&nbsp;&nbsp;Email:</span></p>
+                            <p style="color:grey">thebookcafe@gmail.com</p>
+
+
+                             
+                 
+                            </div>
+
+
+
+                    <div class="col-md-12 text-center" style="background-color:#2d3039; height: 25px">
+                    <p style="color:grey; padding-top:2px; font-size: 12px">&copy The Book Café| Copyrights 2017</p>
+                    </div>
+                        </div>
+                    </div>
+           </footer>
+
+             
+</section>
+ 
+</html>
+
+
+
+
+
